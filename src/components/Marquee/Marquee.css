@@ -1,0 +1,6 @@
+@import '../../colors.css';
+
+.marquee_block {
+  background: var(--red-to-green-gradientFallback);
+  background: var(--red-to-green-gradient);
+}

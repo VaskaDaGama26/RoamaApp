@@ -4,7 +4,7 @@ import type { GridItemData } from './types';
 const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
   return (
     <div
-      style={{ color: item.color ? item.color : '#000000' }}
+      style={{ color: item.color ? item.color : 'var(--bg-black)' }}
       key={item.id}
       className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
     >

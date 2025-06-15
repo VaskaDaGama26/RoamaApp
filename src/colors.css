@@ -1,0 +1,25 @@
+:root {
+  /* Main Colors */
+  --bg-neutral: #f6f6f6;
+  --bg-dark: #414246;
+  --bg-black: #000000;
+
+  /* Red Green Gradient */
+  --red-to-green-gradientFallback: rgb(244, 184, 184, 0.4);
+  --red-to-green-gradient: linear-gradient(
+    140deg,
+    rgba(242, 122, 125, 0.3) 0%,
+    rgba(247, 212, 134, 0.3) 23%,
+    rgba(228, 226, 165, 0.3) 45%,
+    rgba(197, 249, 215, 0.3) 100%
+  );
+
+  /* Blue Pink Gradient */
+  --blue-to-pink-gradientFallback: rgb(244, 184, 184, 0.4);
+  --blue-to-pink-gradient: linear-gradient(
+    103deg,
+    rgba(174, 209, 239, 0.4) 0%,
+    rgba(242, 223, 193, 0.4) 45%,
+    rgba(240, 185, 239, 0.4) 100%
+  );
+}

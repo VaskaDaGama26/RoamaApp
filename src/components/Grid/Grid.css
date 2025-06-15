@@ -1,30 +1,20 @@
 @import 'tailwindcss';
+@import '../../colors.css';
 
 /* BGs */
 .bg-neutral {
-  background-color: #f6f6f6;
+  background-color: var(--bg-neutral);
 }
 .bg-dark {
-  background-color: #414246;
+  background-color: var(--bg-dark);
 }
 .bg-red-to-green {
-  background: rgb(244, 184, 184, 0.4);
-  background: linear-gradient(
-    140deg,
-    rgba(242, 122, 125, 0.3) 0%,
-    rgba(247, 212, 134, 0.3) 23%,
-    rgba(228, 226, 165, 0.3) 45%,
-    rgba(197, 249, 215, 0.3) 100%
-  );
+  background: var(--red-to-green-gradientFallback);
+  background: var(--red-to-green-gradient);
 }
 .bg-blue-to-pink {
-  background: rgb(244, 184, 184, 0.4);
-  background: linear-gradient(
-    103deg,
-    rgba(174, 209, 239, 0.4) 0%,
-    rgba(242, 223, 193, 0.4) 45%,
-    rgba(240, 185, 239, 0.4) 100%
-  );
+  background: var(--blue-to-pink-gradientFallback);
+  background: var(--blue-to-pink-gradient);
 }
 
 /* 

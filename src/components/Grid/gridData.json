@@ -3,7 +3,7 @@
     "id": 1,
     "label": "Вкусы мира",
     "text": "Попробуйте планету на вкус — от Пад Тая до Тако с картой происхождения каждого блюда",
-    "icon": "/RoamaApp/icons/food.svg",
+    "icon": "/RoamaApp/icons/grid/food.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "label": "Места, где стоит остановиться",
     "text": "Необычные отели: ледяные, капсульные, подземные — с рейтингами и ценами",
-    "icon": "/RoamaApp/icons/hotel.svg",
+    "icon": "/RoamaApp/icons/grid/hotel.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "label": "Знаменитые заведения мира",
     "text": "Исторические бары, культовые кофейни и атмосферные рестораны",
-    "icon": "/RoamaApp/icons/cafe.svg",
+    "icon": "/RoamaApp/icons/grid/cafe.svg",
     "bg": "bg-red-to-green",
     "pattern": "bg-pattern-grid"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "label": "Культуры и традиции",
     "text": "Фестивали, яркие народные праздники и культурные события по всему миру",
-    "icon": "/RoamaApp/icons/mask.svg",
+    "icon": "/RoamaApp/icons/grid/mask.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "label": "Потрясающие маршруты",
     "text": "Захватывающие путешествия: поездом, авто или пешком — с транспортом и уровнем сложности",
-    "icon": "/RoamaApp/icons/pin.svg",
+    "icon": "/RoamaApp/icons/grid/pin.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "label": "Места с вау-видом",
     "text": "Лучшие виды планеты: природные чудеса, смотровые площадки, секретные точки",
-    "icon": "/RoamaApp/icons/view.svg",
+    "icon": "/RoamaApp/icons/grid/view.svg",
     "bg": "bg-blue-to-pink",
     "pattern": "bg-pattern-grid"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "label": "Наследие человечества",
     "text": "Памятники ЮНЕСКО, древние руины, музеи — история, стоимость, как добраться",
-    "icon": "/RoamaApp/icons/monument.svg",
+    "icon": "/RoamaApp/icons/grid/monument.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "label": "Полезное и практичное",
     "text": "Чеклисты, советы, приложения — всё для комфортного и безопасного путешествия",
-    "icon": "/RoamaApp/icons/case.svg",
+    "icon": "/RoamaApp/icons/grid/case.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "height": "baseHeight"
@@ -67,7 +67,7 @@
   {
     "id": 9,
     "label": "Путешествия в книгах и кино",
-    "icon": "/RoamaApp/icons/photos.svg",
+    "icon": "/RoamaApp/icons/grid/photos.svg",
     "iconHeight": "40px",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-lights",
