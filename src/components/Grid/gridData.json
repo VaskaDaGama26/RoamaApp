@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "label": "Вкусы мира",
+    "text": "Попробуйте планету на вкус — от Пад Тая до Тако с картой происхождения каждого блюда",
+    "icon": "/icons/food.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 2,
+    "label": "Места, где стоит остановиться",
+    "text": "Необычные отели: ледяные, капсульные, подземные — с рейтингами и ценами",
+    "icon": "/icons/hotel.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 3,
+    "label": "Знаменитые заведения мира",
+    "text": "Исторические бары, культовые кофейни и атмосферные рестораны",
+    "icon": "/icons/cafe.svg",
+    "bg": "bg-red-to-green",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 4,
+    "label": "Культуры и традиции",
+    "text": "Фестивали, яркие народные праздники и культурные события по всему миру",
+    "icon": "/icons/mask.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 5,
+    "label": "Потрясающие маршруты",
+    "text": "Захватывающие путешествия: поездом, авто или пешком — с транспортом и уровнем сложности",
+    "icon": "/icons/pin.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 6,
+    "label": "Места с вау-видом",
+    "text": "Лучшие виды планеты: природные чудеса, смотровые площадки, секретные точки",
+    "icon": "/icons/view.svg",
+    "bg": "bg-blue-to-pink",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 7,
+    "label": "Наследие человечества",
+    "text": "Памятники ЮНЕСКО, древние руины, музеи — история, стоимость, как добраться",
+    "icon": "/icons/monument.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid"
+  },
+  {
+    "id": 8,
+    "label": "Полезное и практичное",
+    "text": "Чеклисты, советы, приложения — всё для комфортного и безопасного путешествия",
+    "icon": "/icons/case.svg",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-grid",
+    "height": "baseHeight"
+  },
+  {
+    "id": 9,
+    "label": "Путешествия в книгах и кино",
+    "icon": "/icons/photos.svg",
+    "iconHeight": "40px",
+    "bg": "bg-neutral",
+    "pattern": "bg-pattern-lights",
+    "colSpan": "colSpanWider",
+    "height": "tightHeight"
+  },
+  {
+    "id": 10,
+    "label": "Минимализм в дороге",
+    "badgeText": "Бесплатно",
+    "bg": "bg-dark",
+    "pattern": "bg-pattern-lights",
+    "colSpan": "colSpanWide",
+    "color": "white",
+    "height": "tighterHeight",
+    "direction": "responsive"
+  }
+]
