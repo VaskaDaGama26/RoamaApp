@@ -150,13 +150,13 @@ GridItem.tsx
     transform 0.4s ease;
   transform: translate(-25%, 25%);
   will-change: transform, opacity;
-  background: url('/bgs/background-category1.svg') no-repeat center center;
+  background: url('/RoamaApp/bgs/background-category1.svg') no-repeat center center;
   background-size: cover;
 }
 .bg-pattern-lights {
   transition: opacity 0.4s ease;
   will-change: opacity;
-  background: url('/bgs/background-lights.svg') no-repeat center center;
+  background: url('/RoamaApp/bgs/background-lights.svg') no-repeat center center;
 }
 
 /* BG PATTERN HOVER */
