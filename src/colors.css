@@ -3,6 +3,7 @@
   --bg-neutral: #f6f6f6;
   --bg-dark: #414246;
   --bg-black: #000000;
+  --headerBG: rgba(255, 255, 255, 0.75);
 
   /* Red Green Gradient */
   --red-to-green-gradientFallback: rgb(244, 184, 184, 0.4);

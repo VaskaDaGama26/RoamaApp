@@ -1,0 +1,25 @@
+@import '../../colors.css';
+
+.header {
+  background-color: var(--headerBG);
+  box-shadow: 0 0 12px 0 #182cc20d;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Start Travel Icon */
+.start_travel img {
+  transition: transform 0.3s ease-in-out;
+}
+.start_travel:hover img {
+  transform: rotate(90deg);
+}
+
+/* Message Icon */
+.message img {
+  transition: all 0.3s ease-in-out;
+}
+.message:hover img {
+  transform: translateX(3px);
+  opacity: 0.8;
+}
