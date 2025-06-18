@@ -3,6 +3,7 @@
   --bg-neutral: #f6f6f6;
   --bg-dark: #414246;
   --bg-black: #000000;
+  --gray: #86888e;
   --headerBG: rgba(255, 255, 255, 0.75);
 
   /* Red Green Gradient */
@@ -23,4 +24,11 @@
     rgba(242, 223, 193, 0.4) 45%,
     rgba(240, 185, 239, 0.4) 100%
   );
+
+  /* Red Blue Gradient */
+  --red-to-blue-gradientFallback: rgba(226, 83, 119, 1);
+  --red-to-blue-gradient:
+    rgba(226, 83, 119, 1) 0%, 
+    rgba(238, 185, 2, 1) 49%, 
+    rgba(98, 180, 255, 1) 100%;
 }
