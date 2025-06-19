@@ -1,0 +1,8 @@
+@import 'leaflet/dist/leaflet.css';
+
+.leaflet-control-attribution {
+    display: none !important;
+}
+.leaflet-popup-close-button span {
+    font-size: 1.5rem;
+}

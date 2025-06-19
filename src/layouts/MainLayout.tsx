@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <>
       <Header />
-      <main className="my-[76px]">
+      <main>
         <Outlet />
       </main>
       <MarqueeComp />

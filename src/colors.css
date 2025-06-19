@@ -1,6 +1,7 @@
 :root {
   /* Main Colors */
   --bg-neutral: #f6f6f6;
+  --bg-neutralHover: #f0f0f0;
   --bg-dark: #414246;
   --bg-black: #000000;
   --gray: #86888e;

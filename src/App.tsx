@@ -1,22 +1,38 @@
 import MainPage from './pages/MainPage/MainPage';
 import FoodPage from './pages/FoodPage/FoodPage';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import ScrollToTop from './components/ScrollToTop';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
   return (
-    <Router basename="/RoamaApp/">
+    <>
+      <ScrollToTop />
       <Routes>
         {/* LAYOUT */}
         <Route path="/" element={<MainLayout />}>
-        {/* PAGES */}
+          {/* PAGES */}
           <Route index element={<MainPage />} />
           <Route path="food" element={<FoodPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-    </Router>
+    </>
   );
 }
 

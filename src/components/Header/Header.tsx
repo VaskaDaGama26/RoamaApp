@@ -6,15 +6,14 @@ import close from '/icons/header/close.svg';
 import './Header.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleStart = () => {
-    const element = document.getElementById('grid');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/', { state: { scrollTo: 'grid' } });
     setIsMenuOpen(false);
   };
 
@@ -23,11 +22,11 @@ const Header = () => {
   };
 
   return (
-    <header className="header sticky z-20 top-5 max-w-[482px] mx-auto flex rounded-2xl flex-row items-center">
+    <header className="header sticky z-[1001] top-5 max-w-[482px] mx-auto flex rounded-2xl flex-row items-center">
       <div className="relative text-lg/tight tracking-tighter font-medium w-full h-14 sm:mx-0 mx-2.5 px-5 flex flex-row justify-between items-center">
         {/* LOGO */}
         <Link to="/">
-          <img className="h-9" src={logo} alt="Roama" />
+          <img className="h-9 duration-300 transform hover:scale-95" src={logo} alt="Roama" />
         </Link>
         {/* NAV */}
         <nav

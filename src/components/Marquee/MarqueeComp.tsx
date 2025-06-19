@@ -8,16 +8,8 @@ const MarqueeComp = () => {
   return (
     <div className="marquee_block flex flex-row items-center h-10 text-base/tight tracking-tighter">
       <Marquee autoFill={true}>
-        <MarqueeLabel
-          left={car}
-          right={car}
-          label="меньше вещей — больше впечатлений и свободы"
-        />
-        <MarqueeLabel
-          left={car}
-          right={car}
-          label="открой мир — каждое путешествие меняет тебя"
-        />
+        <MarqueeLabel left={car} right={car} label="меньше вещей — больше впечатлений и свободы" />
+        <MarqueeLabel left={car} right={car} label="открой мир — каждое путешествие меняет тебя" />
         <MarqueeLabel
           left={car}
           right={car}

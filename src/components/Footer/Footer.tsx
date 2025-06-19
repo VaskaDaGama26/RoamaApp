@@ -14,7 +14,11 @@ const Footer = () => {
         <div className="flex flex-row justify-center sm:justify-start">
           {/* LOGO */}
           <Link to="/">
-            <img className="w-fit h-[40px]" src={footerLOGO} alt="" />
+            <img
+              className="w-fit h-[40px] duration-300 transform hover:scale-95"
+              src={footerLOGO}
+              alt=""
+            />
           </Link>
         </div>
         <div className="flex flex-col">
@@ -39,7 +43,7 @@ const Footer = () => {
             <p className="text-xs/tight sm:text-base/tight font-normal text-(--gray)">
               Разработка: Кириченко Василий
             </p>
-            <a target="_blank" href="https://t.me/vaskadagamaa26">
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/vaskadagamaa26">
               <img
                 className="h-[30px] rounded-full duration-300 transform hover:-translate-y-1"
                 src={logoKV}
