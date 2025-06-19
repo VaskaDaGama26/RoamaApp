@@ -1,6 +1,7 @@
 export interface GridItemData {
   id: number;
   label: string;
+  link: string;
 
   icon?: string;
   iconHeight?: string;

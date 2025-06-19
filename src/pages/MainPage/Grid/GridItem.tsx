@@ -1,9 +1,11 @@
 import React from 'react';
 import type { GridItemData } from './types';
+import { Link } from 'react-router-dom';
 
 const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
   return (
-    <div
+    <Link
+      to={item.link}
       style={{ color: item.color ? item.color : 'var(--bg-black)' }}
       key={item.id}
       className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
@@ -26,7 +28,7 @@ const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
         <p className="grid_text">{item.text}</p>
       </div>
       <p className="grid_label">{item.label}</p>
-    </div>
+    </Link>
   );
 };
 

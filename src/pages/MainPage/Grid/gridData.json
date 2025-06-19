@@ -5,7 +5,8 @@
     "text": "Попробуйте планету на вкус — от Пад Тая до Тако с картой происхождения каждого блюда",
     "icon": "/RoamaApp/icons/grid/food.svg",
     "bg": "bg-neutral",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": "food"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "text": "Необычные отели: ледяные, капсульные, подземные — с рейтингами и ценами",
     "icon": "/RoamaApp/icons/grid/hotel.svg",
     "bg": "bg-neutral",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "text": "Исторические бары, культовые кофейни и атмосферные рестораны",
     "icon": "/RoamaApp/icons/grid/cafe.svg",
     "bg": "bg-red-to-green",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "text": "Фестивали, яркие народные праздники и культурные события по всему миру",
     "icon": "/RoamaApp/icons/grid/mask.svg",
     "bg": "bg-neutral",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "text": "Захватывающие путешествия: поездом, авто или пешком — с транспортом и уровнем сложности",
     "icon": "/RoamaApp/icons/grid/pin.svg",
     "bg": "bg-neutral",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "text": "Лучшие виды планеты: природные чудеса, смотровые площадки, секретные точки",
     "icon": "/RoamaApp/icons/grid/view.svg",
     "bg": "bg-blue-to-pink",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "text": "Памятники ЮНЕСКО, древние руины, музеи — история, стоимость, как добраться",
     "icon": "/RoamaApp/icons/grid/monument.svg",
     "bg": "bg-neutral",
-    "pattern": "bg-pattern-grid"
+    "pattern": "bg-pattern-grid",
+    "link": ""
   },
   {
     "id": 8,
@@ -62,7 +69,8 @@
     "icon": "/RoamaApp/icons/grid/case.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "height": "baseHeight"
+    "height": "baseHeight",
+    "link": ""
   },
   {
     "id": 9,
@@ -72,7 +80,8 @@
     "bg": "bg-neutral",
     "pattern": "bg-pattern-lights",
     "colSpan": "colSpanWider",
-    "height": "tightHeight"
+    "height": "tightHeight",
+    "link": ""
   },
   {
     "id": 10,
@@ -83,6 +92,7 @@
     "colSpan": "colSpanWide",
     "color": "white",
     "height": "tighterHeight",
-    "direction": "responsive"
+    "direction": "responsive",
+    "link": ""
   }
 ]

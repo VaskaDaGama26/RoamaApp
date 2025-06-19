@@ -5,13 +5,17 @@ import footerLOGO from '/ROAMA-footer.svg';
 import Telegram from './icons/tg.svg?react';
 import Youtube from './icons/yt.svg?react';
 import VKontakte from './icons/vk.svg?react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="footer h-fit px-3 pt-[60px] pb-5">
       <div className="max-w-[1020px] flex flex-col gap-[60px] mx-auto tracking-tighter">
         <div className="flex flex-row justify-center sm:justify-start">
-          <img className="w-fit h-[40px]" src={footerLOGO} alt="" />
+          {/* LOGO */}
+          <Link to="/">
+            <img className="w-fit h-[40px]" src={footerLOGO} alt="" />
+          </Link>
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col-reverse items-center gap-4 sm:gap-0 sm:flex-row justify-between pb-5">

@@ -5,7 +5,7 @@ import GridItem from './GridItem';
 
 const Grid: React.FC<GridProps> = ({ data }) => {
   return (
-    <div id="grid" className="grid">
+    <div id="grid" className="grid scroll-mt-24">
       {data.map((item) => (
         <GridItem key={item.id} item={item} />
       ))}

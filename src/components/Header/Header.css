@@ -1,4 +1,4 @@
-@import '../../../colors.css';
+@import '../../colors.css';
 
 .header {
   background-color: var(--headerBG);
