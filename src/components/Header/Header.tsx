@@ -16,7 +16,7 @@ const Header = () => {
     <header className="header sticky z-20 top-5 max-w-[482px] mx-auto flex rounded-2xl flex-row items-center">
       <div className="text-lg/tight tracking-tighter font-medium w-full h-14 sm:mx-0 mx-2.5 px-5 flex flex-row justify-between items-center">
         {/* LOGO */}
-        <img className="h-[22px]" src={logo} alt="Roama" />
+        <img className="h-9" src={logo} alt="Roama" />
         {/* NAV */}
         <nav className="sm:contents sm:relative hidden absolute">
           <div className="start_travel flex flex-row items-center gap-1.5 cursor-pointer">
