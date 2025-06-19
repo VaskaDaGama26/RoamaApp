@@ -1,0 +1,32 @@
+@import '../../../colors.css';
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-14deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-12deg);
+  }
+}
+@keyframes reversed-float {
+  0% {
+    transform: translateY(0px) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-8deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-6deg);
+  }
+}
+
+.world {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* .traveler {
+  animation: reversed-float 4s ease-in-out infinite;
+} */

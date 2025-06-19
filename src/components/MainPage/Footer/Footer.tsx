@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import logoKV from '/greenLogoKV.png';
 import footerLOGO from '/ROAMA-footer.svg';

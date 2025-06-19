@@ -1,5 +1,4 @@
-@import 'tailwindcss';
-@import '../../colors.css';
+@import '../../../colors.css';
 
 /* BGs */
 .bg-neutral {
@@ -26,7 +25,7 @@ Grid.tsx
   max-width: 1020px;
   margin: 0 auto;
   gap: 8px;
-  padding: 80px 4px;
+  padding: 0 4px 80px;
   grid-template-columns: repeat(4, minmax(0, 249px));
 }
 @media screen and (max-width: 1024px) {
