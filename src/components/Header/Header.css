@@ -6,6 +6,10 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+.nav {
+  background-color: var(--navBG);
+  box-shadow: 0 0 12px 0 #182cc20d;
+}
 
 /* Start Travel Icon */
 .start_travel img {

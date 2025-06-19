@@ -5,7 +5,7 @@ import footerLOGO from '/ROAMA-footer.svg';
 
 import Telegram from './icons/tg.svg?react';
 import Youtube from './icons/yt.svg?react';
-import LinkedIn from './icons/lin.svg?react';
+import VKontakte from './icons/vk.svg?react';
 
 const Footer = () => {
   return (
@@ -21,13 +21,13 @@ const Footer = () => {
             </a>
             <div className="flex flex-row gap-2.5">
               <a className="cursor-pointer" href="#">
+                <VKontakte className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.vk-path]:fill-[url(#icon-gradient)]" />
+              </a>
+              <a className="cursor-pointer" href="#">
                 <Telegram className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.telegram-path]:fill-[url(#icon-gradient)]" />
               </a>
               <a className="cursor-pointer" href="#">
                 <Youtube className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.youtube-path]:fill-[url(#icon-gradient)]" />
-              </a>
-              <a className="cursor-pointer" href="#">
-                <LinkedIn className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.linkedin-path]:fill-[url(#icon-gradient)]" />
               </a>
             </div>
           </div>

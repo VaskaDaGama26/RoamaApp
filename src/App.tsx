@@ -9,7 +9,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 function App() {
   return (
     <>
-      <div className='bg-pattern'></div>
+      <div className="bg-pattern"></div>
       <Header />
       <HeroSection />
       <Grid data={gridData as GridItemData[]} />
