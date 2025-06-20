@@ -1,0 +1,14 @@
+.grid2 {
+  display: grid;
+  width: fit-content;
+  max-width: 1020px;
+  margin: 0 auto;
+  gap: 8px;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 512px));
+}
+@media screen and (max-width: 640px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 170px));
+  }
+}

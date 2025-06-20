@@ -6,7 +6,7 @@
     "icon": "/RoamaApp/icons/grid/food.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": "food"
+    "link": "food/"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "icon": "/RoamaApp/icons/grid/hotel.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": ""
+    "link": "hotel/"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "icon": "/RoamaApp/icons/grid/cafe.svg",
     "bg": "bg-red-to-green",
     "pattern": "bg-pattern-grid",
-    "link": ""
+    "link": "dining/"
   },
   {
     "id": 4,

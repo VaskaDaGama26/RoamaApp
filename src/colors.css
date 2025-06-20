@@ -7,6 +7,8 @@
   --gray: #86888e;
   --navBG: rgba(255, 255, 255, 1);
   --headerBG: rgba(255, 255, 255, 0.75);
+  --purple: #8884d8;
+  --purpleHover: #9996d3;
 
   /* Red Green Gradient */
   --red-to-green-gradientFallback: rgb(244, 184, 184, 0.4);

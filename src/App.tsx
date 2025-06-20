@@ -6,6 +6,8 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import DiningPage from './pages/DiningPage/DiningPage';
+import HotelPage from './pages/HotelPage/HotelPage';
 
 function App() {
   const location = useLocation();
@@ -28,7 +30,11 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           {/* PAGES */}
           <Route index element={<MainPage />} />
-          <Route path="food" element={<FoodPage />} />
+          {/* GRID */}
+          <Route path="food/" element={<FoodPage />} />
+          <Route path="hotel/" element={<HotelPage />} />
+          <Route path="dining/" element={<DiningPage />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
