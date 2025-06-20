@@ -1,13 +1,13 @@
 import TypewriterComponent from 'typewriter-effect';
-import './HeroSection.css';
+import './WelcomeSection.css';
 import world from '/icons/hero/world.svg';
 import traveller from '/icons/hero/traveler.svg';
 
-const HeroSection = () => {
+const WelcomeSection = () => {
   return (
     <section className="hero max-w-[1020px] mx-auto my-20 px-2.5 lg:px-0 relative">
       {/* World */}
-      <img className="world mb-5 lg:mb-0 h-20 sm:h-28" src={world} alt="World Map" />
+      <img className="world mb-5 lg:mb-0 h-20 sm:h-28" src={world} aria-hidden="true" alt="" />
       <div className="flex flex-col gap-5 items-center justify-center">
         <div className="text-2xl/tight sm:text-5xl/tight text-center font-semibold tracking-tighter">
           <TypewriterComponent
@@ -27,11 +27,12 @@ const HeroSection = () => {
         <img
           className="h-20 sm:h-28 transition-transform duration-300 group-hover:translate-y-[60px]"
           src={traveller}
-          alt="Traveller"
+          aria-hidden="true"
+          alt=""
         />
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default WelcomeSection;

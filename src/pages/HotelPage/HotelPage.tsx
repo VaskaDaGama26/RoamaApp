@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const HotelPage = () => {
-  return (
-    <div>HotelPage</div>
-  )
-}
+  return <div>HotelPage</div>;
+};
 
-export default HotelPage
+export default HotelPage;

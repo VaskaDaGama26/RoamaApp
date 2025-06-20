@@ -1,15 +1,20 @@
-import Grid from './Grid/Grid';
-import type { GridItemData } from './Grid/types';
-import gridData from './Grid/gridData.json';
-import HeroSection from './HeroSection/HeroSection';
+import Grid from '../../components/Grid/Grid';
+import type { GridItemData } from './types';
+import gridData from './gridData.json';
+import WelcomeSection from './WelcomeSection/WelcomeSection';
 import './Mainpage.css';
+import GridItem from './GridItem/GridItem';
 
-const MainPage = () => {
+const MainPage: React.FC = () => {
   return (
     <main>
       <div className="bg-pattern"></div>
-      <HeroSection />
-      <Grid data={gridData as GridItemData[]} />
+      <WelcomeSection />
+      <Grid
+        data={gridData as GridItemData[]}
+        gridClass="main__grid"
+        renderItem={(item) => <GridItem item={item} />}
+      />
     </main>
   );
 };

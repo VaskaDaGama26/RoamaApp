@@ -2,7 +2,7 @@ import React from 'react';
 import type { DishItemData } from '../types';
 import ImageWithSkeleton from '../../../components/ImageWithSkeleton';
 
-const DishItem: React.FC<{ item: DishItemData }> = ({ item }) => {
+const DishCard: React.FC<{ item: DishItemData }> = ({ item }) => {
   return (
     <article className="p-5 bg-(--bg-neutral) duration-300 hover:bg-(--bg-neutralHover) rounded-[6px] w-full card tracking-tighter">
       <a
@@ -19,4 +19,4 @@ const DishItem: React.FC<{ item: DishItemData }> = ({ item }) => {
   );
 };
 
-export default DishItem;
+export default DishCard;

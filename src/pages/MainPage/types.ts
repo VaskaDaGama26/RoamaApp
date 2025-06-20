@@ -16,7 +16,3 @@ export interface GridItemData {
   direction?: 'default' | 'responsive';
   colSpan?: string;
 }
-
-export interface GridProps {
-  data: GridItemData[];
-}

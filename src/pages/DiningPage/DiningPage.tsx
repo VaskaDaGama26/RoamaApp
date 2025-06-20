@@ -1,11 +1,14 @@
 import ContinentChart from './ContinentChart/ContinentChart';
-import ContinentFilter from './ContinentFilter.tsx/ContinentFilter';
-import HeroSection from './HeroSection/HeroSection';
+import ContinentFilter from './ContinentFilter/ContinentFilter';
+import HeroSection from '../../components/HeroSection/HeroSection';
 
 const DiningPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto my-20">
-      <HeroSection />
+      <HeroSection
+        heading="Знаменитые заведения мира"
+        description="Исторические бары, культовые кофейни и атмосферные рестораны"
+      />
       <ContinentChart />
       <ContinentFilter />
     </div>

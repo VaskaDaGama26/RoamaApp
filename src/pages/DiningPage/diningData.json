@@ -4,69 +4,79 @@
     "city": "Гавана, Куба",
     "desc": "Родина даикири и любимое место Эрнеста Хемингуэя",
     "continent": "Северная Америка",
-    "bill": "7"
+    "bill": "7",
+    "link": "https://en.wikipedia.org/wiki/Floridita"
   },
   {
     "title": "Old Absinthe House",
     "city": "Новый Орлеан, США",
     "desc": "Уникальный бар с атмосферой XIX века, любили Марк Твен и Оскар Уайльд",
     "continent": "Северная Америка",
-    "bill": "12"
+    "bill": "12",
+    "link": "https://en.wikipedia.org/wiki/Old_Absinthe_House"
   },
   {
-    "title": "The Long Bar",
+    "title": "Long Bar",
     "city": "Сингапур",
     "desc": "Легенда колониальной эпохи, родина Singapore Sling",
     "continent": "Азия",
-    "bill": "23"
+    "bill": "23",
+    "link": "https://www.raffles.com/singapore/dining/long-bar/"
   },
   {
     "title": "Bar Hemingway",
     "city": "Париж, Франция",
-    "desc": "Уютный, в духе «хемингуэевской» эпохи, коллекция авторских коктейлей",
+    "desc": "Уютный бар, в духе «хемингуэевской» эпохи, коллекция авторских коктейлей",
     "continent": "Европа",
-    "bill": "36"
+    "bill": "36",
+    "link": "https://www.ritzparis.com/hotel/paris/bars-restaurants/bar-hemingway"
   },
   {
     "title": "Caffè Florian",
     "city": "Венеция, Италия",
-    "desc": "Открыт в 1720 году; здесь встречались Гольдони, Байрон, Казанова ",
+    "desc": "Открыт в 1720 году, здесь встречались Гольдони, Байрон, Казанова",
     "continent": "Европа",
-    "bill": "15"
+    "bill": "15",
+    "link": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%BE%D1%80%D0%B8%D0%B0%D0%BD_(%D0%BA%D0%B0%D1%84%D0%B5)"
   },
   {
     "title": "Café Tortoni",
     "city": "Буэнос‑Айрес, Аргентина",
-    "desc": "Старейшая кофейня страны (1858): Борхес, Гардель — атмосфера и легенда",
+    "desc": "Старейшая кофейня страны (1858)",
     "continent": "Южная Америка",
-    "bill": "19"
+    "bill": "19",
+    "link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80%D1%82%D0%BE%D0%BD%D0%B8_(%D0%BA%D0%B0%D1%84%D0%B5,_%D0%91%D1%83%D1%8D%D0%BD%D0%BE%D1%81-%D0%90%D0%B9%D1%80%D0%B5%D1%81)"
   },
   {
     "title": "Algerian Coffee Stores",
     "city": "Лондон, Англия",
     "desc": "Основана в 1887 году, старейшее кофейное место в Soho",
     "continent": "Европа",
-    "bill": "4"
+    "bill": "4",
+    "link": "https://en.wikipedia.org/wiki/Algerian_Coffee_Stores"
   },
   {
     "title": "Café Majestic",
     "city": "Порту, Португалия",
     "desc": "Историческое Art Nouveau кафе (1922), шедевр архитектуры и гастрономии",
     "continent": "Европа",
-    "bill": "8"
+    "bill": "8",
+    "link": "https://en.wikipedia.org/wiki/Caf%C3%A9_Majestic"
   },
   {
     "title": "Katz’s Delicatessen",
     "city": "Нью‑Йорк, США",
     "desc": "Открыт в 1888 году; культовый сэндвич‑деликатес с пастрамой",
     "continent": "Северная Америка",
-    "bill": "54"
+    "bill": "54",
+    "link": "https://katzsdelicatessen.com/?srsltid=AfmBOoqrgC_5m638Rq3JDd4PDEFVNOyL6R9ukkrxDQTrJyX3ObLYYlb-"
   },
   {
     "title": "Peter Luger Steak House",
     "city": "Бруклин, США",
     "desc": "Основан в 1887 году; легендарный стейк‑хаус с мишленовской репутацией ",
     "continent": "Северная Америка",
-    "bill": "150"
+    "bill": "150",
+    "link": "https://peterluger.com/"
   }
 ]
