@@ -23,7 +23,7 @@ const FilterButtons = ({ continents, activeContinent, onSelect }: Props) => {
         <button
           key={continent}
           onClick={() => onSelect(continent === activeContinent ? null : continent)}
-          className={`px-4 py-1.5 cursor-pointer rounded-full border text-sm font-medium transition tracking-tighter ${
+          className={`px-4 py-1.5 cursor-pointer rounded-full border text-sm font-medium transition ${
             activeContinent === continent
               ? 'bg-(--purple) text-white border-(--purple)'
               : 'bg-white text-gray-700 border-gray-300 hover:border-(--purpleHover)'

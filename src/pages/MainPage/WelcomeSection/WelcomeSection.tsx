@@ -5,11 +5,11 @@ import traveller from '/icons/hero/traveler.svg';
 
 const WelcomeSection = () => {
   return (
-    <section className="hero max-w-[1020px] mx-auto my-20 px-2.5 lg:px-0 relative">
+    <section className="hero max-w-[1020px] mx-auto mt-12 mb-20 px-2.5 lg:px-0 relative">
       {/* World */}
       <img className="world mb-5 lg:mb-0 h-20 sm:h-28" src={world} aria-hidden="true" alt="" />
       <div className="flex flex-col gap-5 items-center justify-center">
-        <div className="text-2xl/tight sm:text-5xl/tight text-center font-semibold tracking-tighter">
+        <div className="text-2xl/tight sm:text-5xl/tight text-center font-semibold">
           <TypewriterComponent
             options={{
               strings: ['Открой мир вместе с ROAMA', 'Путешествуй по-новому'],

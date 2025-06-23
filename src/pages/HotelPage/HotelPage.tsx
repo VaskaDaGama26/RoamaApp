@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HotelPage = () => {
+const HotelPage: React.FC = () => {
   return <div>HotelPage</div>;
 };
 

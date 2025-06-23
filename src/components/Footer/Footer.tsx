@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer h-fit px-3 pt-[60px] pb-5">
-      <div className="max-w-[1020px] flex flex-col gap-[60px] mx-auto tracking-tighter">
+      <div className="max-w-[1020px] flex flex-col gap-[60px] mx-auto">
         <div className="flex flex-row justify-center sm:justify-start">
           {/* LOGO */}
           <Link to="/">

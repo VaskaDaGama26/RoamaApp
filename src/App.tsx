@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import DiningPage from './pages/DiningPage/DiningPage';
 import HotelPage from './pages/HotelPage/HotelPage';
+import PracticalPage from './pages/PracticalPage/PracticalPage';
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,8 @@ function App() {
           <Route path="food/" element={<FoodPage />} />
           <Route path="hotel/" element={<HotelPage />} />
           <Route path="dining/" element={<DiningPage />} />
+
+          <Route path="practical/" element={<PracticalPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

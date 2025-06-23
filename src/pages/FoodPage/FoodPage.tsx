@@ -8,7 +8,7 @@ import type { DishItemData } from './types';
 const FoodPage = () => {
   const data = placesData as DishItemData[];
   return (
-    <div className="max-w-[1020px] mx-auto mt-20">
+    <div className="max-w-[1020px] mx-auto mt-12">
       <HeroSection
         heading="Попробуйте планету на вкус"
         description="От Брискета до Суши — гастрономическое путешествие по 12 странам"

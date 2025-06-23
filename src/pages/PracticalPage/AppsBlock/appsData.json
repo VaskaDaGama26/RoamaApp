@@ -1,0 +1,74 @@
+[
+  {
+    "title": "WiFi Map",
+    "desc": "Приложение показывает все точки WiFi с открытым доступом, а к закрытым указаны пароли.",
+    "icon": "/icons/practical/apps/wifimap.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=io.wifimap.wifimap",
+    "appleLink": "https://apps.apple.com/us/app/wifi-map-free-wifi-near-you/id548925969"
+  },
+  {
+    "title": "Visit a City",
+    "desc": "Организация путешествий, мини-путеводители для тех, у кого всего пара дней на осмотр всего города.",
+    "icon": "/icons/practical/apps/visitacity.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.visitacity.visitacityapp&hl=en",
+    "appleLink": "https://apps.apple.com/us/app/visit-a-city/id985996026"
+  },
+  {
+    "title": "MAPS.ME",
+    "desc": "Надежный друг путешественников: скачивайте карту нужного города и планируйте любой маршрут.",
+    "icon": "/icons/practical/apps/mapsme.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro",
+    "appleLink": "https://apps.apple.com/ru/app/maps-me-offline-maps-gps-nav/id510623322"
+  },
+  {
+    "title": "Яндекс.Переводчик",
+    "desc": "Переводчик для любого языка, возможность пользоваться без доступа в интернет.",
+    "icon": "/icons/practical/apps/yatranslate.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=ru.yandex.translate",
+    "appleLink": "https://apps.apple.com/ru/app/%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/id584291439"
+  },
+  {
+    "title": "TripAdvisor",
+    "desc": "Один из самых крупных сервисов-помощников для туристов, где каждый может оставить свое мнение.",
+    "icon": "/icons/practical/apps/tripadvisor.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.tripadvisor.tripadvisor&hl=ru",
+    "appleLink": "https://apps.apple.com/ru/app/tripadvisor-%D0%B2%D1%81%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%D0%BE%D0%BA/id284876795"
+  },
+  {
+    "title": "Airbnb",
+    "desc": "Объявления размещают обычные люди, которые сдают апартаменты и квартиры туристам.",
+    "icon": "/icons/practical/apps/airbnb.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.airbnb.android&hl=ru",
+    "appleLink": "https://apps.apple.com/us/app/airbnb/id401626263"
+  },
+  {
+    "title": "Travelata",
+    "desc": "Бронь пакетных туров — полностью спланированных путешествий с билетами и бронью отелей.",
+    "icon": "/icons/practical/apps/travelata.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=ru.travelata.app&hl=ru",
+    "appleLink": "https://apps.apple.com/ru/app/%D0%B3%D0%BE%D1%80%D1%8F%D1%89%D0%B8%D0%B5-%D1%82%D1%83%D1%80%D1%8B-%D0%B2-travelata-ru/id883141609"
+  },
+  {
+    "title": "Первая помощь",
+    "desc": "Инструкции по оказанию первой помощи и номера служб спасений в разных странах.",
+    "icon": "/icons/practical/apps/ifrc.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.cube.gdpc.fa&hl=ru",
+    "appleLink": "https://apps.apple.com/ru/app/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C-ifrc/id1312876691"
+  },
+  {
+    "title": "Yelp",
+    "desc": "Еда и услуги поблизости со строгой система отзывов, местам с высоким рейтингом можно доверять.",
+    "icon": "/icons/practical/apps/yelp.svg",
+
+    "googleLink": "https://play.google.com/store/apps/details?id=com.yelp.android",
+    "appleLink": "https://apps.apple.com/us/app/yelp-food-delivery-reviews/id284910350"
+  }
+]

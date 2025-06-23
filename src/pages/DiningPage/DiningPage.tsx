@@ -4,7 +4,7 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 
 const DiningPage = () => {
   return (
-    <div className="max-w-[1020px] mx-auto my-20">
+    <div className="max-w-[1020px] mx-auto mt-12 mb-20">
       <HeroSection
         heading="Знаменитые заведения мира"
         description="Исторические бары, культовые кофейни и атмосферные рестораны"

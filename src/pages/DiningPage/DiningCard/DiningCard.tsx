@@ -5,7 +5,7 @@ const DiningCard = ({ item }: { item: DiningPlace }) => {
   return (
     <article
       key={title}
-      className="duration-300 bg-(--bg-neutral) hover:bg-(--bg-neutralHover) shadow rounded-xl p-4 tracking-tighter"
+      className="duration-300 bg-(--bg-neutral) hover:bg-(--bg-neutralHover) shadow rounded-xl p-4"
     >
       <a
         className="h-full flex flex-col justify-between cursor-pointer"

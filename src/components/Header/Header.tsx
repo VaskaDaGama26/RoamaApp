@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="header sticky z-[1001] top-5 max-w-[482px] mx-auto flex rounded-2xl flex-row items-center">
-      <div className="relative text-lg/tight tracking-tighter font-medium w-full h-14 sm:mx-0 mx-2.5 px-5 flex flex-row justify-between items-center">
+      <div className="relative text-lg/tight font-medium w-full h-14 sm:mx-0 mx-2.5 px-5 flex flex-row justify-between items-center">
         {/* LOGO */}
         <Link to="/">
           <img className="h-9 duration-300 transform hover:scale-95" src={logo} alt="Roama" />
