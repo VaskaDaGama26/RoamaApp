@@ -60,12 +60,12 @@
     "icon": "/RoamaApp/icons/grid/monument.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": ""
+    "link": "heritage/"
   },
   {
     "id": 8,
     "label": "Полезное и практичное",
-    "text": "Чеклисты, советы, приложения — всё для комфортного и безопасного путешествия",
+    "text": "Чеклисты, приложения — всё для комфортного и безопасного путешествия",
     "icon": "/RoamaApp/icons/grid/case.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",

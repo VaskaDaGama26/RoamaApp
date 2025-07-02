@@ -9,6 +9,7 @@ import { useLocation } from 'react-router-dom';
 import DiningPage from './pages/DiningPage/DiningPage';
 import HotelPage from './pages/HotelPage/HotelPage';
 import PracticalPage from './pages/PracticalPage/PracticalPage';
+import HeritagePage from './pages/HeritagePage/HeritagePage';
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
           <Route path="hotel/" element={<HotelPage />} />
           <Route path="dining/" element={<DiningPage />} />
 
+          <Route path="heritage/" element={<HeritagePage />} />
           <Route path="practical/" element={<PracticalPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
