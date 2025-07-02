@@ -1,3 +1,4 @@
+import ImageWithSkeleton from '../../../components/ImageWithSkeleton';
 import type { TimelineItemType } from '../types';
 
 const TimelineItem = ({ item }: { item: TimelineItemType }) => {
@@ -14,27 +15,30 @@ const TimelineItem = ({ item }: { item: TimelineItemType }) => {
           <h3 className="text-xl font-semibold mt-1">{item.title}</h3>
           {item.gallery ? (
             <div className="flex flex-row gap-4">
-              <img
+              <ImageWithSkeleton
+                className="my-3 w-full lg:w-3/4 object-cover rounded-lg"
+                height="256px"
                 src={item.image}
                 alt={item.title}
-                className="my-3 w-full lg:w-3/4 h-64 object-cover rounded-lg"
               />
               <div className="hidden lg:flex flex-col w-1/4 justify-center gap-8">
                 {item.gallery.map((image, index) => (
-                  <img
+                  <ImageWithSkeleton
                     key={index}
+                    className="w-full object-cover rounded-lg"
+                    height="112px"
                     src={image}
                     alt={item.title}
-                    className="w-full h-28 object-cover rounded-lg"
                   />
                 ))}
               </div>
             </div>
           ) : (
-            <img
+            <ImageWithSkeleton
+              className="my-3 w-full lg:w-3/4 object-cover rounded-lg"
+              height="256px"
               src={item.image}
               alt={item.title}
-              className="my-3 w-3/4 h-64 object-cover rounded-lg"
             />
           )}
 

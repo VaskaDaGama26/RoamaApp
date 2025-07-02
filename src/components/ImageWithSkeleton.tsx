@@ -7,11 +7,13 @@ const ImageWithSkeleton = ({
   smHeight,
   src,
   alt,
+  className,
 }: {
   height: string;
   smHeight?: string;
   src: string;
   alt: string;
+  className?: string;
 }) => {
   const [loaded, setLoaded] = useState(false);
 
@@ -22,6 +24,7 @@ const ImageWithSkeleton = ({
         src={src}
         alt={alt}
         onLoad={() => setLoaded(true)}
+        className={className}
         style={{
           display: loaded ? 'block' : 'none',
           width: '100%',
