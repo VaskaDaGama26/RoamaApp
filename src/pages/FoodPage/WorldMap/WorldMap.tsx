@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './WorldMap.css';
 import type { DishProps } from '../types';
-import ImageWithSkeleton from '../../../components/ImageWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
 
 // ICONS LEAFLET
 import L from 'leaflet';
@@ -42,7 +42,7 @@ const WorldMap: React.FC<DishProps> = ({ data }) => {
               <a target="_blank" href={place.link} rel="noopener noreferrer">
                 {place.title}
               </a>
-              <ImageWithSkeleton height="80px" alt={place.title} src={place.image} />
+              <LazyMediaWithSkeleton type="image" height="80px" alt={place.title} src={place.image} />
             </div>
           </Popup>
         </Marker>

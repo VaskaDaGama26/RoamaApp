@@ -10,6 +10,7 @@ import DiningPage from './pages/DiningPage/DiningPage';
 import HotelPage from './pages/HotelPage/HotelPage';
 import PracticalPage from './pages/PracticalPage/PracticalPage';
 import HeritagePage from './pages/HeritagePage/HeritagePage';
+import FestivalsPage from './pages/FestivalsPage/FestivalsPage';
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
           <Route path="food/" element={<FoodPage />} />
           <Route path="hotel/" element={<HotelPage />} />
           <Route path="dining/" element={<DiningPage />} />
+          <Route path="festivals/" element={<FestivalsPage />} />
 
           <Route path="heritage/" element={<HeritagePage />} />
           <Route path="practical/" element={<PracticalPage />} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { DishItemData } from '../types';
-import ImageWithSkeleton from '../../../components/ImageWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
 
 const DishCard: React.FC<{ item: DishItemData }> = ({ item }) => {
   return (
@@ -11,7 +11,13 @@ const DishCard: React.FC<{ item: DishItemData }> = ({ item }) => {
         rel="noopener noreferrer"
         href={item.link}
       >
-        <ImageWithSkeleton height="150px" smHeight="75px" src={item.image} alt={item.title} />
+        <LazyMediaWithSkeleton
+          type="image"
+          height="150px"
+          smHeight="75px"
+          src={item.image}
+          alt={item.title}
+        />
         <p className="h-fit text-sm sm:text-base font-medium">{item.title}</p>
         <p className="hidden sm:block text-sm font-light">{item.desc}</p>
       </a>
