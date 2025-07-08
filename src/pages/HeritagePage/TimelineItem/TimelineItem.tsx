@@ -19,7 +19,7 @@ const TimelineItem = ({ item }: { item: TimelineItemType }) => {
                 type="image"
                 className="w-full lg:w-3/4 object-cover rounded-lg"
                 height="256px"
-                src={item.image}
+                src={`${import.meta.env.BASE_URL}${item.image}`}
                 alt={item.title}
               />
               <div className="hidden lg:flex flex-col w-1/4 justify-center gap-8">
@@ -29,7 +29,7 @@ const TimelineItem = ({ item }: { item: TimelineItemType }) => {
                     key={index}
                     className="w-full object-cover rounded-lg"
                     height="112px"
-                    src={image}
+                    src={`${import.meta.env.BASE_URL}${image}`}
                     alt={item.title}
                   />
                 ))}
@@ -40,7 +40,7 @@ const TimelineItem = ({ item }: { item: TimelineItemType }) => {
               type="image"
               className="w-full lg:w-3/4 object-cover rounded-lg"
               height="256px"
-              src={item.image}
+              src={`${import.meta.env.BASE_URL}${item.image}`}
               alt={item.title}
             />
           )}

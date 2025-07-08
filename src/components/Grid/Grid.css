@@ -1,6 +1,7 @@
 .food__grid,
 .dining__grid,
-.main__grid {
+.main__grid,
+.hotel__grid {
   display: grid;
   width: fit-content;
   max-width: 1020px;
@@ -20,11 +21,20 @@
   padding: 0 4px 80px;
   grid-template-columns: repeat(4, minmax(0, 249px));
 }
+.hotel__grid {
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 340px));
+  grid-template-rows: repeat(2, minmax(0, 400px));
+}
 
 @media screen and (max-width: 1024px) {
   .food__grid,
   .main__grid {
     grid-template-columns: repeat(2, minmax(0, 249px));
+  }
+  .hotel__grid {
+    grid-template-columns: repeat(2, minmax(0, 340px));
+    grid-template-rows: repeat(3, minmax(0, 400px));
   }
 }
 
@@ -33,5 +43,11 @@
   .main__grid,
   .food__grid {
     grid-template-columns: repeat(2, minmax(0, 170px));
+  }
+}
+@media screen and (max-width: 700px) {
+  .hotel__grid {
+    grid-template-columns: repeat(1, minmax(0, 300px));
+    grid-template-rows: repeat(6, minmax(0, 350px));
   }
 }

@@ -3,7 +3,7 @@ import './Grid.css';
 
 interface GridProps<T> {
   id?: string;
-  gridClass: string;
+  gridClass?: string;
   data: T[];
   renderItem: (item: T) => React.ReactNode;
 }

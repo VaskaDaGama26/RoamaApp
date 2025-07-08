@@ -2,10 +2,10 @@
   {
     "era": "Современность",
     "title": "Музей Акрополя, Афины",
-    "image": "/RoamaApp/heritage/akropol/akropol-1.jpg",
+    "image": "heritage/akropol/akropol-1.jpg",
     "gallery": [
-      "/RoamaApp/heritage/akropol/akropol-2.jpg",
-      "/RoamaApp/heritage/akropol/akropol-3.jpg"
+      "heritage/akropol/akropol-2.jpg",
+      "heritage/akropol/akropol-3.jpg"
     ],
     "year": "2009",
     "description": "Современное здание у подножия Акрополя с артефактами Древней Греции.",
@@ -16,10 +16,10 @@
   {
     "era": "Средневековье",
     "title": "Альгамбра, Испания",
-    "image": "/RoamaApp/heritage/algambra/algambra-1.jpg",
+    "image": "heritage/algambra/algambra-1.jpg",
     "gallery": [
-      "/RoamaApp/heritage/algambra/algambra-2.jpg",
-      "/RoamaApp/heritage/algambra/algambra-3.jpg"
+      "heritage/algambra/algambra-2.jpg",
+      "heritage/algambra/algambra-3.jpg"
     ],
     "year": "XIII век",
     "description": "Мавританский дворец с резными стенами и садами в Гранаде.",
@@ -30,10 +30,10 @@
   {
     "era": "Античность",
     "title": "Колизей, Рим",
-    "image": "/RoamaApp/heritage/colosseum/colosseum-1.jpg",
+    "image": "heritage/colosseum/colosseum-1.jpg",
     "gallery": [
-      "/RoamaApp/heritage/colosseum/colosseum-2.jpg",
-      "/RoamaApp/heritage/colosseum/colosseum-3.jpg"
+      "heritage/colosseum/colosseum-2.jpg",
+      "heritage/colosseum/colosseum-3.jpg"
     ],
     "year": "80 г. н.э.",
     "description": "Грандиозная арена, ставшая символом древнеримской цивилизации.",
@@ -44,8 +44,8 @@
   {
     "era": "Древний Восток",
     "title": "Петра, Иордания",
-    "image": "/RoamaApp/heritage/petra/petra-1.jpg",
-    "gallery": ["/RoamaApp/heritage/petra/petra-2.jpg", "/RoamaApp/heritage/petra/petra-3.jpg"],
+    "image": "heritage/petra/petra-1.jpg",
+    "gallery": ["heritage/petra/petra-2.jpg", "heritage/petra/petra-3.jpg"],
     "year": "300 г. до н.э.",
     "description": "Город, вырезанный в скалах, один из семи новых чудес света.",
     "howToGetThere": "Автобус из Аммана до Вади-Муса.",
@@ -55,10 +55,10 @@
   {
     "era": "Доисторическая эпоха",
     "title": "Гёбекли-Тепе, Турция",
-    "image": "/RoamaApp/heritage/gobekli-tepe/gobekli-tepe-1.jpg",
+    "image": "heritage/gobekli-tepe/gobekli-tepe-1.jpg",
     "gallery": [
-      "/RoamaApp/heritage/gobekli-tepe/gobekli-tepe-2.jpg",
-      "/RoamaApp/heritage/gobekli-tepe/gobekli-tepe-3.jpg"
+      "heritage/gobekli-tepe/gobekli-tepe-2.jpg",
+      "heritage/gobekli-tepe/gobekli-tepe-3.jpg"
     ],
     "year": "10 000 г. до н.э.",
     "description": "Самое древнее культовое сооружение, изменившее историю цивилизаций.",

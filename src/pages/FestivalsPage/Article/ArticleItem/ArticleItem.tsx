@@ -13,7 +13,7 @@ const ArticleItem = ({ item }: { item: ArticleItemType }) => {
       {item.video && (
         <LazyMediaWithSkeleton
           type="video"
-          src={item.video}
+          src={`${import.meta.env.BASE_URL}${item.video}`}
           height="320px"
           className="rounded-md h-80 w-full object-cover object-bottom"
         />
@@ -27,7 +27,7 @@ const ArticleItem = ({ item }: { item: ArticleItemType }) => {
               type="image"
               className="rounded-md max-h-80"
               key={index}
-              src={image}
+              src={`${import.meta.env.BASE_URL}${image}`}
               alt={item.title}
             />
           ))}

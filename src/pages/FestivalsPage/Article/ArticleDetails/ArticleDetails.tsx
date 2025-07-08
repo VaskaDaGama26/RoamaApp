@@ -1,4 +1,4 @@
-import moreIcon from '/events/icons/more.svg';
+import moreIcon from '/icons/more.svg';
 import calendarIcon from '/events/icons/calendar.svg';
 import pathIcon from '/events/icons/path.svg';
 
