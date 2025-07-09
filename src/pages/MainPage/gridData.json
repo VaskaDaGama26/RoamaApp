@@ -42,7 +42,7 @@
     "icon": "/RoamaApp/icons/grid/pin.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": ""
+    "link": "directions/"
   },
   {
     "id": 6,
