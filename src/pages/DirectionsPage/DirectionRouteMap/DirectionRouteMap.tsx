@@ -1,9 +1,11 @@
-import { MapContainer, TileLayer, Polyline, useMap } from 'react-leaflet';
+import { MapContainer, Tooltip, CircleMarker, TileLayer, Polyline, useMap } from 'react-leaflet';
 import { useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
+import { useState } from 'react';
 
 type DirectionRouteMapProps = {
-  routeCoordinates: [number, number][]; // [lat, lng]
+  routeCoordinates: [number, number][];
+  routeLabels: string[];
 };
 
 const FitBounds = ({ routeCoordinates }: { routeCoordinates: [number, number][] }) => {
@@ -18,7 +20,8 @@ const FitBounds = ({ routeCoordinates }: { routeCoordinates: [number, number][] 
   return null;
 };
 
-const DirectionRouteMap = ({ routeCoordinates }: DirectionRouteMapProps) => {
+const DirectionRouteMap = ({ routeCoordinates, routeLabels }: DirectionRouteMapProps) => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   if (!routeCoordinates || routeCoordinates.length === 0) {
     return <p>Нет координат для отображения маршрута</p>;
   }
@@ -29,7 +32,13 @@ const DirectionRouteMap = ({ routeCoordinates }: DirectionRouteMapProps) => {
     <MapContainer
       center={center}
       zoom={13}
-      style={{ height: '300px', width: '100%', filter: 'invert(0%)' }}
+      style={{
+        height: '300px',
+        width: '100%',
+        borderRadius: '6px',
+        boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+        pointerEvents: 'auto',
+      }}
       scrollWheelZoom={false}
       attributionControl={false}
       zoomControl={false}
@@ -42,8 +51,31 @@ const DirectionRouteMap = ({ routeCoordinates }: DirectionRouteMapProps) => {
       zoomDelta={0}
       inertia={false}
     >
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Polyline positions={routeCoordinates} color="blue" weight={4} />
+      <TileLayer
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+        attribution=""
+      />
+      <Polyline positions={routeCoordinates} color="oklch(55.8% 0.288 302.321)" weight={3} />
+      {routeCoordinates.map((coord, index) => (
+        <CircleMarker
+          key={`circle-${index}`}
+          center={coord}
+          radius={6}
+          color="#ffffff"
+          weight={2}
+          fillColor="oklch(55.8% 0.288 302.321)"
+          fillOpacity={1}
+          eventHandlers={{
+            click: () => setActiveIndex(index),
+          }}
+        >
+          {activeIndex === index && (
+            <Tooltip direction="right" offset={[0, -10]} opacity={1} permanent>
+              {routeLabels?.[index] || `Точка ${index + 1}`}
+            </Tooltip>
+          )}
+        </CircleMarker>
+      ))}
       <FitBounds routeCoordinates={routeCoordinates} />
     </MapContainer>
   );

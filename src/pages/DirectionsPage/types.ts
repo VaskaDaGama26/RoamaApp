@@ -7,4 +7,5 @@ export type DirectionItemType = {
     text: string;
   }[];
   coordinates: [number, number][];
+  coordinatesDots: string[];
 };

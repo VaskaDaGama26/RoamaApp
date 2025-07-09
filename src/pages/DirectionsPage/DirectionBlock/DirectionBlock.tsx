@@ -14,7 +14,10 @@ const DirectionBlock = () => {
       {data.map((item, index) => (
         <div className="flex flex-col gap-8" key={index}>
           <BlockHeading label={item.label} />
-          <DirectionRouteMap routeCoordinates={item.coordinates} />
+          <DirectionRouteMap
+            routeLabels={item.coordinatesDots}
+            routeCoordinates={item.coordinates}
+          />
           <div className="flex flex-col gap-2 sm:gap-0 sm:flex-row justify-between">
             <p className="text-gray-500 flex flex-row gap-1 items-center text-sm lg:text-base">
               <img className="h-6" src={hintIcon} alt="" />
