@@ -7,12 +7,8 @@ const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
   // Styles for <Link />
   const linkStyle = { color: item.color ? item.color : 'var(--bg-black)' };
 
-  return (
-    <Link
-      to={item.link}
-      style={linkStyle}
-      className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
-    >
+  const content = (
+    <>
       <div className={`${item.pattern}`}></div>
       <div className="contents lg:flex flex-col gap-2.5 z-10">
         {/* ICON */}
@@ -29,7 +25,31 @@ const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
         <p className="grid_text">{item.text}</p>
       </div>
       <p className="grid_label">{item.label}</p>
-    </Link>
+    </>
+  );
+
+  if (item.download) {
+    return (
+      <a
+        download
+        style={linkStyle}
+        className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
+        href={`${import.meta.env.BASE_URL}${item.download}`}
+      >
+        {content}
+      </a>
+    );
+  }
+  return (
+    <>
+      <Link
+        to={item.link}
+        style={linkStyle}
+        className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
+      >
+        {content}
+      </Link>
+    </>
   );
 };
 

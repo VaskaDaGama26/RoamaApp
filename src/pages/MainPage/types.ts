@@ -15,4 +15,6 @@ export interface GridItemData {
   height?: string;
   direction?: 'default' | 'responsive';
   colSpan?: string;
+
+  download?: string;
 }
