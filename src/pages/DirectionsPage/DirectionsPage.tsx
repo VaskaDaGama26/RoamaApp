@@ -6,7 +6,7 @@ const DirectionsPage = () => {
     <div className="max-w-[1020px] mx-auto mt-12 mb-24">
       <HeroSection
         heading="Потрясающие маршруты"
-        description="Захватывающие путешествия: поездом, авто или пешком — с транспортом и уровнем сложности"
+        description="Захватывающие путешествия: поездом, авто или пешком"
       />
       <DirectionBlock />
     </div>
