@@ -17,6 +17,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleFormClick = () => {
+    navigate('/form');
+    setIsMenuOpen(false);
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
@@ -40,7 +45,9 @@ const Header = () => {
           </div>
           <div className="message flex flex-row items-end gap-1.5 cursor-pointer rounded-lg">
             <img className="h-[18px]" src={message} alt="" />
-            <a href="#">Будь в курсе</a>
+            <button className="cursor-pointer" onClick={handleFormClick}>
+              Будь в курсе
+            </button>
           </div>
         </nav>
         {/* MENU ICON */}
