@@ -13,22 +13,21 @@ const ArticleDetails = ({
 }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between w-full items-start">
-      {place ||
-        (time && (
-          <div className="flex flex-col gap-2 text-sm lg:text-base">
-            {place && (
-              <p className="text-gray-500 flex flex-row gap-1">
-                <img src={pathIcon} alt="Время проведения" />
-                {place}
-              </p>
-            )}
-            {time && (
-              <p className="text-gray-500 flex flex-row gap-1">
-                <img src={calendarIcon} alt="Время проведения" /> {time}
-              </p>
-            )}
-          </div>
-        ))}
+      {(place || time) && (
+        <div className="flex flex-col gap-2 text-sm lg:text-base">
+          {place && (
+            <p className="text-gray-500 flex flex-row gap-1">
+              <img src={pathIcon} alt="Время проведения" />
+              {place}
+            </p>
+          )}
+          {time && (
+            <p className="text-gray-500 flex flex-row gap-1">
+              <img src={calendarIcon} alt="Время проведения" /> {time}
+            </p>
+          )}
+        </div>
+      )}
 
       {link && (
         <a
