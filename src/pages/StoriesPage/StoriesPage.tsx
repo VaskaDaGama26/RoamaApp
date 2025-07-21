@@ -1,17 +1,17 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
 import ArticleBlock from '../../components/Article/ArticleBlock/ArticleBlock';
-import festivalsData from './festivalsData.json';
+import storiesData from './storiesData.json';
 
-const FestivalsPage = () => {
+const StoriesPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12 mb-24">
       <HeroSection
         heading="Культуры и традиции"
         description="Фестивали, яркие народные праздники и культурные события по всему миру"
       />
-      <ArticleBlock data={festivalsData} />
+      <ArticleBlock data={storiesData} />
     </div>
   );
 };
 
-export default FestivalsPage;
+export default StoriesPage;

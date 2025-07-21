@@ -23,9 +23,20 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col-reverse items-center gap-4 sm:gap-0 sm:flex-row justify-between pb-5">
-            <a href="#" className="text-white text-sm/tight sm:text-lg/tight font-normal">
-              Политика конфиденциальности
-            </a>
+            <div className="flex flex-col gap-4 max-w-xl">
+              <a href="#" className="text-white text-sm/tight sm:text-lg/tight font-normal">
+                Политика конфиденциальности
+              </a>
+              <a
+                target="_blank"
+                href="https://t.me/vaskadagamaa26"
+                className="text-(--gray) text-xs/relaxed sm:text-sm/relaxed font-normal"
+              >
+                Сайт носит некоммерческий характер. Все материалы принадлежат их правообладателям и
+                используются исключительно в информационных целях. По вопросам удаления контента вы
+                можете связаться со мной.
+              </a>
+            </div>
             <div className="flex flex-row gap-2.5">
               <a className="cursor-pointer" href="#">
                 <VKontakte className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.vk-path]:fill-[url(#icon-gradient)]" />

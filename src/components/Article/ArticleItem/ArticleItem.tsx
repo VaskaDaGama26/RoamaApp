@@ -1,6 +1,6 @@
-import BlockHeading from '../../../../components/BlockHeading';
-import LazyMediaWithSkeleton from '../../../../components/LazyMediaWithSkeleton';
-import type { ArticleItemType } from '../../types';
+import BlockHeading from '../../BlockHeading';
+import LazyMediaWithSkeleton from '../../LazyMediaWithSkeleton';
+import type { ArticleItemType } from '../types';
 import ArticleParagraphBlock from '../ParagraphBlock/ArticleParagraphBlock';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
