@@ -5,7 +5,7 @@ import MainLayout from './layouts/MainLayout';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import DiningPage from './pages/DiningPage/DiningPage';
 import HotelPage from './pages/HotelPage/HotelPage';
 import PracticalPage from './pages/PracticalPage/PracticalPage';
@@ -18,6 +18,7 @@ import StoriesPage from './pages/StoriesPage/StoriesPage';
 
 function App() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -29,6 +30,15 @@ function App() {
       }
     }
   }, [location]);
+
+  useEffect(() => {
+    const search = location.search;
+    if (search.startsWith('?/')) {
+      const path = search.slice(2).replace(/~and~/g, '&');
+      navigate('/' + path, { replace: true });
+    }
+  }, [location.search, navigate]);
+
   return (
     <>
       <ScrollToTop />
