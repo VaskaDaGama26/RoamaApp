@@ -31,8 +31,9 @@ const HotelCard = ({
         <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden">
           <LazyMediaWithSkeleton
             className="w-full h-full object-cover"
-            height='400px'
+            height="400px"
             type="image"
+            alt={title}
             src={`${import.meta.env.BASE_URL}${image}`}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#00000013] to-[#000000bc]"></div>

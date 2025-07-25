@@ -7,11 +7,6 @@ export interface AppData {
   appleLink?: string;
 }
 
-export interface TipData {
-  text: string;
-  emoji: string;
-}
-
 export type ChecklistData = {
   [category: string]: { label: string }[];
 };

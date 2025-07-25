@@ -12,7 +12,7 @@ const AppsBlock = ({ data }: { data: AppData[] }) => {
           <div key={index} className="flex flex-row gap-4">
             <img
               className="border border-stone-300 w-fit rounded-full h-10"
-              src={`/RoamaApp/${app.icon}`}
+              src={`${import.meta.env.BASE_URL}${app.icon}`}
               alt={app.title}
             />
             <div className="flex flex-col justify-between">
