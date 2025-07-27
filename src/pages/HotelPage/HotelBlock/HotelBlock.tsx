@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Grid from '../../../components/Grid/Grid';
 import HotelCard from '../HotelCard/HotelCard';
-import HotelData from '../HotelData.json';
+
 import type { HotelCardType } from '../types';
 import chooseIcon from '/hotels/icons/chooseCard.svg';
 
-const HotelBlock = () => {
+const HotelBlock = ({ data }: { data: HotelCardType[] }) => {
   const [activeTitle, setActiveTitle] = useState<string | null>(null);
-  const data = HotelData as HotelCardType[];
+
   return (
     <>
       <div className="flex flex-col px-2.5 items-end gap-2">

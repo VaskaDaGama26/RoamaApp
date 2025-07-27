@@ -22,8 +22,8 @@ const fakeData = [
   },
 ];
 
-describe('ChecklistBlock', () => {
-  it('renders app titles and descriptions', () => {
+describe('AppsBlock', () => {
+  it('renders app titles, descriptions and icons', () => {
     render(<AppsBlock data={fakeData} />);
 
     // Заголовки категорий

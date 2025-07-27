@@ -2,13 +2,11 @@ import PlaceCard from '../PlaceCard/PlaceCard';
 import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
 import { useState, useEffect } from 'react';
 import Grid from '../../../components/Grid/Grid';
-import placesData from '../placesData.json';
 import type { PlaceItemData } from '../types';
 import chooseIcon from '/places/click-here.svg';
 
-const PlaceBlock = () => {
+const PlaceBlock = ({ data }: { data: PlaceItemData[] }) => {
   const [selectedPlace, setSelectedPlace] = useState<PlaceItemData | null>(null);
-  const data = placesData as PlaceItemData[];
 
   const handleCardClick = (item: PlaceItemData) => {
     setSelectedPlace(item);
@@ -35,12 +33,15 @@ const PlaceBlock = () => {
       <Grid
         gridClass="places__grid"
         data={data}
-        renderItem={(item) => <PlaceCard click={() => handleCardClick(item)} item={item} />}
+        renderItem={(item) => (
+          <PlaceCard click={() => handleCardClick(item)} title={item.title} image={item.image} />
+        )}
       />
 
       {/* Overlay */}
       {selectedPlace && (
         <div
+          data-testid="overlay"
           className="fixed inset-0 pt-12 z-[1002] bg-[#000000b4] flex items-center justify-center"
           onClick={closeOverlay}
         >

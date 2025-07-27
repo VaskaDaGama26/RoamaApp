@@ -1,7 +1,10 @@
-import type { PlaceItemData } from '../types';
 import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
 
-const PlaceCard: React.FC<{ click: () => void; item: PlaceItemData }> = ({ click, item }) => {
+const PlaceCard: React.FC<{ click: () => void; title: string; image: string }> = ({
+  click,
+  title,
+  image,
+}) => {
   return (
     <article
       onClick={click}
@@ -10,7 +13,8 @@ const PlaceCard: React.FC<{ click: () => void; item: PlaceItemData }> = ({ click
       <LazyMediaWithSkeleton
         type="image"
         height="400px"
-        src={`${import.meta.env.BASE_URL}${item.image}`}
+        alt={title}
+        src={`${import.meta.env.BASE_URL}${image}`}
         className="w-full object-cover"
       />
     </article>
