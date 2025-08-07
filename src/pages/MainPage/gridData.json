@@ -3,7 +3,7 @@
     "id": 1,
     "label": "Вкусы мира",
     "text": "От Брискета до Суши — гастрономическое путешествие с картой происхождения каждого блюда",
-    "icon": "/RoamaApp/icons/grid/food.svg",
+    "icon": "/RoamaApp/static/icons/grid/food.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "link": "food/"
@@ -12,7 +12,7 @@
     "id": 2,
     "label": "Места, где стоит остановиться",
     "text": "Необычные отели: ледяные, капсульные, подземные — с рейтингами и ценами",
-    "icon": "/RoamaApp/icons/grid/hotel.svg",
+    "icon": "/RoamaApp/static/icons/grid/hotel.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "link": "hotel/"
@@ -21,7 +21,7 @@
     "id": 3,
     "label": "Знаменитые заведения мира",
     "text": "Исторические бары, культовые кофейни и атмосферные рестораны",
-    "icon": "/RoamaApp/icons/grid/cafe.svg",
+    "icon": "/RoamaApp/static/icons/grid/cafe.svg",
     "bg": "bg-red-to-green",
     "pattern": "bg-pattern-grid",
     "link": "dining/"
@@ -30,7 +30,7 @@
     "id": 4,
     "label": "Культуры и традиции",
     "text": "Фестивали, яркие народные праздники и культурные события по всему миру",
-    "icon": "/RoamaApp/icons/grid/mask.svg",
+    "icon": "/RoamaApp/static/icons/grid/mask.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "link": "festivals"
@@ -39,7 +39,7 @@
     "id": 5,
     "label": "Потрясающие маршруты",
     "text": "Захватывающие путешествия: поездом, авто или пешком",
-    "icon": "/RoamaApp/icons/grid/pin.svg",
+    "icon": "/RoamaApp/static/icons/grid/pin.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "link": "directions/"
@@ -48,7 +48,7 @@
     "id": 6,
     "label": "Места с вау-видом",
     "text": "Фантастические локации Земли: природа, от которой захватывает дух",
-    "icon": "/RoamaApp/icons/grid/view.svg",
+    "icon": "/RoamaApp/static/icons/grid/view.svg",
     "bg": "bg-blue-to-pink",
     "pattern": "bg-pattern-grid",
     "link": "places/"
@@ -57,7 +57,7 @@
     "id": 7,
     "label": "Наследие человечества",
     "text": "Памятники ЮНЕСКО, древние руины, музеи — история, стоимость, как добраться",
-    "icon": "/RoamaApp/icons/grid/monument.svg",
+    "icon": "/RoamaApp/static/icons/grid/monument.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "link": "heritage/"
@@ -66,7 +66,7 @@
     "id": 8,
     "label": "Полезное и практичное",
     "text": "Чеклисты, приложения — всё для комфортного и безопасного путешествия",
-    "icon": "/RoamaApp/icons/grid/case.svg",
+    "icon": "/RoamaApp/static/icons/grid/case.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "height": "baseHeight",
@@ -75,7 +75,7 @@
   {
     "id": 9,
     "label": "Путешествия в книгах и кино",
-    "icon": "/RoamaApp/icons/grid/photos.svg",
+    "icon": "/RoamaApp/static/icons/grid/photos.svg",
     "iconHeight": "40px",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-lights",

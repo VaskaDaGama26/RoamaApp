@@ -8,7 +8,7 @@
   pointer-events: none;
   z-index: 1;
   content: '';
-  background: url('/RoamaApp/bgs/background-colors.svg') no-repeat center center;
+  background: url('/RoamaApp/static/bgs/background-colors.svg') no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0;
