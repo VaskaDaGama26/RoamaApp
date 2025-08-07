@@ -1,20 +1,22 @@
-import MainPage from './pages/MainPage/MainPage';
-import FoodPage from './pages/FoodPage/FoodPage';
 import { Route, Routes } from 'react-router-dom';
-import MainLayout from './layouts/MainLayout';
-import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import ScrollToTop from './components/ScrollToTop';
-import { useEffect } from 'react';
+import { lazy, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import DiningPage from './pages/DiningPage/DiningPage';
-import HotelPage from './pages/HotelPage/HotelPage';
-import PracticalPage from './pages/PracticalPage/PracticalPage';
-import HeritagePage from './pages/HeritagePage/HeritagePage';
-import FestivalsPage from './pages/FestivalsPage/FestivalsPage';
-import DirectionsPage from './pages/DirectionsPage/DirectionsPage';
-import PlacesPage from './pages/PlacesPage/PlacesPage';
-import FeedbackPage from './pages/FeedbackPage/FeedbackPage';
-import StoriesPage from './pages/StoriesPage/StoriesPage';
+
+import ScrollToTop from './components/ScrollToTop';
+import MainLayout from './layouts/MainLayout';
+
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
+const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
+const FoodPage = lazy(() => import('./pages/FoodPage/FoodPage'));
+const DiningPage = lazy(() => import('./pages/DiningPage/DiningPage'));
+const HotelPage = lazy(() => import('./pages/HotelPage/HotelPage'));
+const PracticalPage = lazy(() => import('./pages/PracticalPage/PracticalPage'));
+const HeritagePage = lazy(() => import('./pages/HeritagePage/HeritagePage'));
+const FestivalsPage = lazy(() => import('./pages/FestivalsPage/FestivalsPage'));
+const DirectionsPage = lazy(() => import('./pages/DirectionsPage/DirectionsPage'));
+const PlacesPage = lazy(() => import('./pages/PlacesPage/PlacesPage'));
+const FeedbackPage = lazy(() => import('./pages/FeedbackPage/FeedbackPage'));
+const StoriesPage = lazy(() => import('./pages/StoriesPage/StoriesPage'));
 
 function App() {
   const location = useLocation();
