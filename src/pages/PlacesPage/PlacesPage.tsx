@@ -8,6 +8,7 @@ const PlacesPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12">
       <HeroSection
+        testId="places"
         heading="Места с вау-видом"
         description="Фантастические локации Земли: природа, от которой захватывает дух"
       />

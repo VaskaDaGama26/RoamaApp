@@ -10,6 +10,7 @@ const PracticalPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12">
       <HeroSection
+        testId="practical"
         heading="Полезное и практичное"
         description="Чеклисты, приложения — всё для комфортного и безопасного путешествия"
       />

@@ -5,6 +5,7 @@ const FeedbackPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12 mb-20">
       <HeroSection
+        testId="feedback"
         heading="Будь в курсе"
         description="Поделись своими впечатлениями и получай новости первым"
       />

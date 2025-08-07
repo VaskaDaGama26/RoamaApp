@@ -11,7 +11,16 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {},
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('lodash')) return 'lodash';
+            if (id.includes('recharts')) return 'recharts';
+            if (id.includes('react-dom')) return 'react-dom';
+            if (id.includes('leaflet')) return 'leaflet';
+            if (id.includes('zod')) return 'zod';
+            return 'vendor';
+          }
+        },
       },
     },
   },

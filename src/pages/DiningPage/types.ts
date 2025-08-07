@@ -6,3 +6,8 @@ export interface DiningPlace {
   bill: string;
   link: string;
 }
+
+export type ChartDataPoint = {
+  continent: string;
+  Среднее: number;
+};

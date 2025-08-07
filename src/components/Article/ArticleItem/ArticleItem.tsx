@@ -1,5 +1,5 @@
-import BlockHeading from '../../BlockHeading';
-import LazyMediaWithSkeleton from '../../LazyMediaWithSkeleton';
+import BlockHeading from '../../BlockHeading/BlockHeading';
+import LazyMediaWithSkeleton from '../../LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 import type { ArticleItemType } from '../types';
 import ArticleParagraphBlock from '../ParagraphBlock/ArticleParagraphBlock';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
@@ -12,6 +12,7 @@ const ArticleItem = ({ item }: { item: ArticleItemType }) => {
       {/* Video */}
       {item.video && (
         <LazyMediaWithSkeleton
+          data-testid="test-video"
           type="video"
           src={`${import.meta.env.BASE_URL}${item.video}`}
           height="320px"
@@ -21,7 +22,7 @@ const ArticleItem = ({ item }: { item: ArticleItemType }) => {
       <ArticleParagraphBlock paragraphs={item.textParagraphs.slice(2)} />
       {/* Images */}
       {item.imageGallery && (
-        <div className="flex flex-col lg:flex-row w-full gap-8 items-center">
+        <div data-testid="gallery" className="flex flex-col lg:flex-row w-full gap-8 items-center">
           {item.imageGallery.map((image, index) => (
             <LazyMediaWithSkeleton
               type="image"

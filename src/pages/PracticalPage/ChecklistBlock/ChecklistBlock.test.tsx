@@ -12,11 +12,9 @@ describe('ChecklistBlock', () => {
   it('renders checklist items', () => {
     render(<ChecklistBlock data={fakeData} />);
 
-    // Заголовки категорий
     expect(screen.getByText('Тест 1')).toBeInTheDocument();
     expect(screen.getByText('Тест 2')).toBeInTheDocument();
 
-    // Содержимое категорий
     expect(screen.getByText('Подпись 1.1')).toBeInTheDocument();
     expect(screen.getByText('Подпись 2.2')).toBeInTheDocument();
   });

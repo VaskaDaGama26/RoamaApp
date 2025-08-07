@@ -1,9 +1,7 @@
 import { BarChart, XAxis, YAxis, Tooltip, Bar, ResponsiveContainer, CartesianGrid } from 'recharts';
-import { getChartData } from '../utils/getChartData';
+import type { ChartDataPoint } from '../types';
 
-const ContinentChart = () => {
-  const data = getChartData();
-
+const ContinentChart = ({ data }: { data: Array<ChartDataPoint> }) => {
   return (
     <div className="w-full max-w-5xl mx-auto p-2.5 sm:p-4 bg-white shadow-md rounded-[6px]">
       <h2 className="text-base/tight sm:text-xl/tight font-semibold mb-4 text-center">

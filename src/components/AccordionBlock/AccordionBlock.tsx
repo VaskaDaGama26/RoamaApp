@@ -34,6 +34,7 @@ const AccordionBlock = ({ data }: AccordionBlockProps) => {
             </button>
 
             <div
+              data-testid={`accordion-content-${index}`}
               className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${
                 isOpen ? 'max-h-[500px] py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
               }`}

@@ -1,9 +1,13 @@
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 
-const PlaceCard: React.FC<{ click: () => void; title: string; image: string }> = ({
+const PlaceCard = ({
   click,
   title,
   image,
+}: {
+  click: () => void;
+  title: string;
+  image: string;
 }) => {
   return (
     <article

@@ -10,6 +10,7 @@ const FoodPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12">
       <HeroSection
+        testId="food"
         heading="Попробуйте планету на вкус"
         description="От Брискета до Суши — гастрономическое путешествие по 12 странам"
       />

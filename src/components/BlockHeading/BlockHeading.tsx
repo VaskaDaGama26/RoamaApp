@@ -10,7 +10,7 @@ const BlockHeading = ({ label, image, imageClasses }: BlockHeadingProps) => {
       <h2 className="text-xl/tight sm:text-2xl/tight text-center w-fit font-semibold pb-1 border-b-2 border-(--gray25)">
         {label}
       </h2>
-      <img className={`absolute ${imageClasses}`} src={image} alt="" />
+      <img className={`absolute ${imageClasses}`} src={image} alt={image} />
     </div>
   );
 };

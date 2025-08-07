@@ -26,20 +26,13 @@ describe('AppsBlock', () => {
   it('renders app titles, descriptions and icons', () => {
     render(<AppsBlock data={fakeData} />);
 
-    // Заголовки категорий
-    expect(screen.getByText('App 1')).toBeInTheDocument();
-    expect(screen.getByText('App 2')).toBeInTheDocument();
+    fakeData.forEach((item) => {
+      expect(screen.getByText(item.title)).toBeInTheDocument();
+      expect(screen.getByText(item.desc)).toBeInTheDocument();
 
-    // Содержимое категорий
-    expect(screen.getByText('The best app.')).toBeInTheDocument();
-    expect(screen.getByText('The worst app.')).toBeInTheDocument();
-
-    // Изображение приложения
-    const image = screen.getByAltText('App 1');
-    expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', '/icon1.svg');
-    const image2 = screen.getByAltText('App 2');
-    expect(image2).toBeInTheDocument();
-    expect(image2).toHaveAttribute('src', '/icon2.svg');
+      const image = screen.getByAltText(item.title);
+      expect(image).toBeInTheDocument();
+      expect(image).toHaveAttribute('src', `/${item.icon}`);
+    });
   });
 });

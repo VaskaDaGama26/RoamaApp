@@ -1,8 +1,8 @@
-import logo from '/ROAMA.svg';
-import turn from '/icons/header/turn_right.svg';
-import message from '/icons/header/message.svg';
-import menu from '/icons/header/menu.svg';
-import close from '/icons/header/close.svg';
+import logo from '/static/ROAMA.svg';
+import turn from '/static/icons/header/turn_right.svg';
+import message from '/static/icons/header/message.svg';
+import menu from '/static/icons/header/menu.svg';
+import close from '/static/icons/header/close.svg';
 import './Header.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';

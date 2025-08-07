@@ -1,6 +1,6 @@
 import './Footer.css';
-import logoKV from '/greenLogoKV.png';
-import footerLOGO from '/ROAMA-footer.svg';
+import logoKV from '/static/greenLogoKV.png';
+import footerLOGO from '/static/ROAMA-footer.svg';
 
 import Telegram from './icons/tg.svg?react';
 import Youtube from './icons/yt.svg?react';

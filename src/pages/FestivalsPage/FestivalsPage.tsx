@@ -6,6 +6,7 @@ const FestivalsPage = () => {
   return (
     <div className="max-w-[1020px] mx-auto mt-12 mb-24">
       <HeroSection
+        testId="festivals"
         heading="Культуры и традиции"
         description="Фестивали, яркие народные праздники и культурные события по всему миру"
       />

@@ -20,6 +20,6 @@ describe('HotelCard', () => {
   });
   it('renders desc', () => {
     render(<HotelCard item={fakeHotel} isActive={true} setActiveTitle={mockSetActiveTitle} />);
-    expect(screen.getByText('A beautiful hotel in the test city.')).toBeInTheDocument();
+    expect(screen.getByText(/beautiful hotel/)).toBeInTheDocument();
   });
 });

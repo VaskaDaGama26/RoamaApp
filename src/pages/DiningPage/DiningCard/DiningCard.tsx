@@ -8,6 +8,7 @@ const DiningCard = ({ item }: { item: DiningPlace }) => {
       className="duration-300 bg-(--bg-neutral) hover:bg-(--bg-neutralHover) shadow rounded-xl p-4"
     >
       <a
+        data-testid={`dining-link-${title}`}
         className="h-full flex flex-col justify-between cursor-pointer"
         target="_blank"
         rel="noopener noreferrer"

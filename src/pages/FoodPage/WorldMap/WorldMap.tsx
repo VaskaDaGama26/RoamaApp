@@ -2,8 +2,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './WorldMap.css';
-import type { DishProps } from '../types';
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import type { DishItemData } from '../types';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 
 // ICONS LEAFLET
 import L from 'leaflet';
@@ -18,7 +18,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-const WorldMap: React.FC<DishProps> = ({ data }) => {
+const WorldMap = ({ data }: { data: DishItemData[] }) => {
   return (
     <MapContainer
       center={[50, 15]}
@@ -42,7 +42,12 @@ const WorldMap: React.FC<DishProps> = ({ data }) => {
               <a target="_blank" href={place.link} rel="noopener noreferrer">
                 {place.title}
               </a>
-              <LazyMediaWithSkeleton type="image" height="80px" alt={place.title} src={place.image} />
+              <LazyMediaWithSkeleton
+                type="image"
+                height="80px"
+                alt={place.title}
+                src={place.image}
+              />
             </div>
           </Popup>
         </Marker>

@@ -10,7 +10,7 @@ interface GridProps<T> {
 
 const Grid = <T,>({ id, gridClass, data, renderItem }: GridProps<T>) => {
   return (
-    <div id={id} className={gridClass}>
+    <div id={id} data-testid="test-grid" className={gridClass}>
       {data.map((item, index) => (
         <React.Fragment key={index}>{renderItem(item)}</React.Fragment>
       ))}

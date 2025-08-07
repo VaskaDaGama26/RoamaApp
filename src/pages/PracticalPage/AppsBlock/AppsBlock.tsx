@@ -1,7 +1,7 @@
-import BlockHeading from '../../../components/BlockHeading';
+import BlockHeading from '../../../components/BlockHeading/BlockHeading';
 import type { AppData } from '../types';
-import appStore from '/icons/practical/appstore.svg';
-import googlePlay from '/icons/practical/googleplay.svg';
+import appStore from '/static/icons/practical/appstore.svg';
+import googlePlay from '/static/icons/practical/googleplay.svg';
 
 const AppsBlock = ({ data }: { data: AppData[] }) => {
   return (

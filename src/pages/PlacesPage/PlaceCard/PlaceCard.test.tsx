@@ -9,11 +9,9 @@ describe('PlaceCard', () => {
 
     render(<PlaceCard click={handleClick} title="Heading Test" image='test/path.png' />);
  
-    // Ищем article и кликаем по нему
     const article = screen.getByRole('article');
     fireEvent.click(article);
 
-    // Проверяем, что обработчик клика вызван
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 });

@@ -6,7 +6,3 @@ export interface DishItemData {
 
   desc?: string;
 }
-
-export interface DishProps {
-  data: DishItemData[];
-}

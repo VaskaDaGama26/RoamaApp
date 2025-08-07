@@ -1,6 +1,6 @@
-import moreIcon from '/icons/more.svg';
-import calendarIcon from '/events/icons/calendar.svg';
-import pathIcon from '/events/icons/path.svg';
+import moreIcon from '/static/icons/more.svg';
+import calendarIcon from '/static/events/icons/calendar.svg';
+import pathIcon from '/static/events/icons/path.svg';
 
 const ArticleDetails = ({
   place,
@@ -17,13 +17,14 @@ const ArticleDetails = ({
         <div className="flex flex-col gap-2 text-sm lg:text-base">
           {place && (
             <p className="text-gray-500 flex flex-row gap-1">
-              <img src={pathIcon} alt="Время проведения" />
+              <img src={pathIcon} alt="Место проведения" />
               {place}
             </p>
           )}
           {time && (
             <p className="text-gray-500 flex flex-row gap-1">
-              <img src={calendarIcon} alt="Время проведения" /> {time}
+              <img src={calendarIcon} alt="Время проведения" />
+              {time}
             </p>
           )}
         </div>

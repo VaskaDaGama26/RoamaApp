@@ -1,10 +1,8 @@
-import luggage from '/heritage/icons/luggage.svg';
+import luggage from '/static/heritage/icons/luggage.svg';
 import TimelineItem from '../TimelineItem/TimelineItem';
 import type { TimelineItemType } from '../types';
-import heritageData from '../heritageData.json';
 
-const TimelineBlock = () => {
-  const data = heritageData as TimelineItemType[];
+const TimelineBlock = ({ data }: { data: TimelineItemType[] }) => {
   return (
     <section className="relative mb-24 border-l-4 border-purple-500 pl-6 py-10 space-y-12">
       <div className="absolute top-0 right-[10px] group -translate-y-3 lg:-translate-y-8 h-fit">

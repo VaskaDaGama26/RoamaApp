@@ -7,7 +7,7 @@ import GridItem from './GridItem/GridItem';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const MainPage: React.FC = () => {
+const MainPage = () => {
   const location = useLocation();
 
   useEffect(() => {

@@ -51,14 +51,11 @@ describe('HotelBlock', () => {
     const firstCard = screen.getByTestId('card-Hotel Test');
     const secondCard = screen.getByTestId('card-Hotel Test 2');
 
-    // Изначально активных карточек нет
     expect(screen.queryByTestId('active-marker')).not.toBeInTheDocument();
 
-    // Кликаем по первой карточке
     fireEvent.click(firstCard);
     expect(screen.getByTestId('card-Hotel Test')).toHaveTextContent('[Active]');
 
-    // Кликаем по второй карточке — теперь она активна
     fireEvent.click(secondCard);
     expect(screen.getByTestId('card-Hotel Test 2')).toHaveTextContent('[Active]');
   });

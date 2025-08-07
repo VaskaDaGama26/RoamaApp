@@ -1,6 +1,6 @@
 import type { HotelCardType } from '../types';
-import moreIcon from '/icons/more.svg';
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import moreIcon from '/static/icons/more.svg';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 
 const HotelCard = ({
   item,

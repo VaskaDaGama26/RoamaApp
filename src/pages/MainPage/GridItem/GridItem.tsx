@@ -1,10 +1,8 @@
-import React from 'react';
 import type { GridItemData } from '../types';
 import { Link } from 'react-router-dom';
 import './GridItem.css';
 
-const GridItem: React.FC<{ item: GridItemData }> = ({ item }) => {
-  // Styles for <Link />
+const GridItem = ({ item }: { item: GridItemData }) => {
   const linkStyle = { color: item.color ? item.color : 'var(--bg-black)' };
 
   const content = (

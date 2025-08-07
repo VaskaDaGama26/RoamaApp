@@ -1,7 +1,7 @@
-import BlockHeading from '../../../components/BlockHeading';
+import BlockHeading from '../../../components/BlockHeading/BlockHeading';
 import './ChecklistBlock.css';
 import type { ChecklistData } from '../types';
-import explorer from '/icons/practical/explorer.svg';
+import explorer from '/static/icons/practical/explorer.svg';
 
 const ChecklistBlock = ({ data }: { data: ChecklistData }) => {
   return (

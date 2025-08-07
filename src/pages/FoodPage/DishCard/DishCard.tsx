@@ -1,11 +1,11 @@
-import React from 'react';
 import type { DishItemData } from '../types';
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 
-const DishCard: React.FC<{ item: DishItemData }> = ({ item }) => {
+const DishCard = ({ item }: { item: DishItemData }) => {
   return (
     <article className="p-5 bg-(--bg-neutral) duration-300 hover:bg-(--bg-neutralHover) rounded-[6px] w-full card">
       <a
+        data-testid="link"
         className="flex flex-col gap-2 justify-between"
         target="_blank"
         rel="noopener noreferrer"

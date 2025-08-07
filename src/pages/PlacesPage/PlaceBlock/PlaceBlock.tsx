@@ -1,9 +1,9 @@
 import PlaceCard from '../PlaceCard/PlaceCard';
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 import { useState, useEffect } from 'react';
 import Grid from '../../../components/Grid/Grid';
 import type { PlaceItemData } from '../types';
-import chooseIcon from '/places/click-here.svg';
+import chooseIcon from '/static/places/click-here.svg';
 
 const PlaceBlock = ({ data }: { data: PlaceItemData[] }) => {
   const [selectedPlace, setSelectedPlace] = useState<PlaceItemData | null>(null);

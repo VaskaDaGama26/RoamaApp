@@ -1,4 +1,4 @@
-import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton';
+import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/LazyMediaWithSkeleton';
 import type { TimelineItemType } from '../types';
 
 const TimelineItem = ({ item }: { item: TimelineItemType }) => {
@@ -7,7 +7,7 @@ const TimelineItem = ({ item }: { item: TimelineItemType }) => {
       {/* Кружок */}
       <div className="absolute -left-[1.15rem] top-1 w-5 h-5 bg-purple-500 rounded-full border-4 border-white"></div>
       {/* Контент */}
-      <a target="_blank" rel="noopener noreferrer" className="relative" href={item.link}>
+      <a data-testid="link" target="_blank" rel="noopener noreferrer" className="relative" href={item.link}>
         <div className="transition-transform duration-400 hover:translate-x-4 bg-white w-full shadow-lg p-5 rounded-xl border border-gray-100">
           <p className="text-sm text-purple-600 font-medium">
             <span className="text-lg font-semibold">{item.era}</span>&nbsp; — &nbsp;{item.year}

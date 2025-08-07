@@ -3,7 +3,7 @@ import Grid from '../../../components/Grid/Grid';
 import HotelCard from '../HotelCard/HotelCard';
 
 import type { HotelCardType } from '../types';
-import chooseIcon from '/hotels/icons/chooseCard.svg';
+import chooseIcon from '/static/hotels/icons/chooseCard.svg';
 
 const HotelBlock = ({ data }: { data: HotelCardType[] }) => {
   const [activeTitle, setActiveTitle] = useState<string | null>(null);

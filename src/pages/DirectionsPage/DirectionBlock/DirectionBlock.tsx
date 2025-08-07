@@ -1,18 +1,15 @@
 import AccordionBlock from '../../../components/AccordionBlock/AccordionBlock';
-import BlockHeading from '../../../components/BlockHeading';
+import BlockHeading from '../../../components/BlockHeading/BlockHeading';
 import DirectionRouteMap from '../DirectionRouteMap/DirectionRouteMap';
-import directionData from '../directionsData.json';
 import type { DirectionItemType } from '../types';
-import hintIcon from '/directions/icons/lightbulb.svg';
-import pathIcon from '/directions/icons/path.svg';
+import hintIcon from '/static/directions/icons/lightbulb.svg';
+import pathIcon from '/static/directions/icons/path.svg';
 
-const DirectionBlock = () => {
-  const data = directionData as DirectionItemType[];
-
+const DirectionBlock = ({ data }: { data: DirectionItemType[] }) => {
   return (
     <div className="flex flex-col gap-16 lg:pt-16 px-2.5 lg:px-0">
       {data.map((item, index) => (
-        <div className="flex flex-col gap-8" key={index}>
+        <div data-testid="direction-item" className="flex flex-col gap-8" key={index}>
           <BlockHeading label={item.label} />
           <DirectionRouteMap
             routeLabels={item.coordinatesDots}

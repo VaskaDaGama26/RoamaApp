@@ -4,8 +4,8 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import feedbackSchema from '../feedbackSchema';
 import Toast from '../../../components/Toast/Toast';
-import review from '/feedback/review.svg';
-import FeedbackInputWrapper from './FeedbackInputWrapper';
+import review from '/static/feedback/review.svg';
+import FeedbackInputWrapper from './FeedbackInputWrapper/FeedbackInputWrapper';
 
 const FeedbackForm = () => {
   const {

@@ -74,6 +74,8 @@ const LazyMediaWithSkeleton = ({
 
       {inView && type === 'video' && (
         <video
+          role="video"
+          data-testid="lazy-video"
           src={src}
           poster={poster}
           autoPlay
