@@ -4,9 +4,9 @@ import HeroSection from './HeroSection';
 
 describe('HeroSection', () => {
   it('renders correctly', () => {
-    render(<HeroSection heading="Heading" description="Description" />);
+    render(<HeroSection heading="Heading" description="Description" testId='test-hero' />);
 
-    expect(screen.getByText('Heading')).toBeInTheDocument();
+    expect(screen.getByTestId('hero-heading-test-hero')).toBeInTheDocument();
     expect(screen.getByText('Description')).toBeInTheDocument();
   });
 });

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+// @ts-nocheck
+import { useState, useRef } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -6,6 +7,9 @@ import feedbackSchema from '../feedbackSchema';
 import Toast from '../../../components/Toast/Toast';
 import review from '/static/feedback/review.svg';
 import FeedbackInputWrapper from './FeedbackInputWrapper/FeedbackInputWrapper';
+import { useMotionValue } from 'motion/react';
+
+import { motion } from 'motion/react';
 
 const FeedbackForm = () => {
   const {
@@ -24,6 +28,40 @@ const FeedbackForm = () => {
     },
   });
 
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const [isDropped, setIsDropped] = useState(false);
+  const dropZoneRef = useRef<HTMLDivElement>(null);
+
+  function checkDrop(event: any) {
+    if (!dropZoneRef.current) return false;
+    const dropZoneRect = dropZoneRef.current.getBoundingClientRect();
+    const dragTarget = event.target.getBoundingClientRect();
+    const centerX = dragTarget.left + dragTarget.width / 2;
+    const centerY = dragTarget.top + dragTarget.height / 2;
+    return (
+      centerX >= dropZoneRect.left &&
+      centerX <= dropZoneRect.right &&
+      centerY >= dropZoneRect.top &&
+      centerY <= dropZoneRect.bottom
+    );
+  }
+
+  function handleDragEnd(event: any) {
+    if (checkDrop(event)) {
+      setIsDropped(true);
+    } else {
+      x.set(0);
+      y.set(0);
+      setIsDropped(false);
+    }
+  }
+
+  function handleDragStart() {
+    setIsDropped(false);
+  }
+
   const [toastVisible, setToastVisible] = useState(false);
 
   const onSubmit = (data: z.infer<typeof feedbackSchema>) => {
@@ -35,13 +73,24 @@ const FeedbackForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex relative flex-col gap-6 px-2.5 lg:px-0 mt-28 mx-auto max-w-3xl"
+      className="flex relative flex-col gap-6 px-2.5 lg:px-0 mt-32 mx-auto max-w-3xl"
     >
-      <img
-        className="h-28 absolute top-0 right-2.5 sm:right-0 -translate-y-[100px]"
-        src={review}
-        alt=""
-      />
+      <div className="flex flex-col px-2.5 items-end gap-4 absolute top-0 right-2.5 sm:right-0 -translate-y-[116px]">
+        <p className="cursor-default text-xs rotate-z-3 text-(--gray)">Потяни за картинку...</p>
+        <motion.img
+          drag
+          dragMomentum={false}
+          dragElastic={0.2}
+          whileDrag={{ scale: 0.75, rotate: 10 }}
+          dragTransition={{ bounceStiffness: 50, bounceDamping: 10 }}
+          style={{ x, y, cursor: 'grab', display: 'block', margin: '0 auto' }}
+          onDragEnd={handleDragEnd}
+          onDragStart={handleDragStart}
+          className="h-20 md:h-28"
+          src={review}
+          alt=""
+        />
+      </div>
 
       {/* TOAST */}
       {toastVisible && (
@@ -110,14 +159,18 @@ const FeedbackForm = () => {
         )}
       </div>
       {/* Submit */}
-      <button
-        className="bg-(--purple) mx-auto duration-300 hover:shadow-2xl text-white text-sm rounded-2xl w-[300px] sm:text-base px-6 py-2 cursor-pointer"
+      <motion.button
+        ref={dropZoneRef}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="bg-(--purple) mx-auto duration-300 text-white text-sm rounded-2xl w-[300px] sm:text-base px-6 py-2 cursor-pointer"
         type="submit"
       >
         Отправить
-      </button>
+      </motion.button>
     </form>
   );
 };
 
 export default FeedbackForm;
+// hover:shadow-2xl
