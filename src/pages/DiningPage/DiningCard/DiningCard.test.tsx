@@ -27,7 +27,7 @@ describe('DiningCard', () => {
     render(
       <>
         {mockData.map((place) => (
-          <DiningCard item={place} />
+          <DiningCard key={place.title} item={place} />
         ))}
       </>
     );
