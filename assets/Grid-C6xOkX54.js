@@ -1,1 +1,0 @@
-import{j as t,R as m}from"./index-DKNkzEEH.js";const c=({id:s,gridClass:a,data:e,renderItem:r})=>t.jsx("div",{id:s,"data-testid":"test-grid",className:a,children:e.map((d,i)=>t.jsx(m.Fragment,{children:r(d)},i))});export{c as G};
