@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import MarqueeComp from '../components/Marquee/MarqueeComp/MarqueeComp';
 import Footer from '../components/Footer/Footer';
-import { Suspense, useState } from 'react';
+import { Suspense } from 'react';
 import { motion } from 'motion/react';
 
 const MainLayout = () => {
