@@ -6,7 +6,7 @@
     "icon": "/RoamaApp/static/icons/grid/food.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": "food/"
+    "link": "food"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "icon": "/RoamaApp/static/icons/grid/hotel.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": "hotel/"
+    "link": "hotel"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "icon": "/RoamaApp/static/icons/grid/cafe.svg",
     "bg": "bg-red-to-green",
     "pattern": "bg-pattern-grid",
-    "link": "dining/"
+    "link": "dining"
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "icon": "/RoamaApp/static/icons/grid/pin.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": "directions/"
+    "link": "directions"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "icon": "/RoamaApp/static/icons/grid/view.svg",
     "bg": "bg-blue-to-pink",
     "pattern": "bg-pattern-grid",
-    "link": "places/"
+    "link": "places"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "icon": "/RoamaApp/static/icons/grid/monument.svg",
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
-    "link": "heritage/"
+    "link": "heritage"
   },
   {
     "id": 8,
@@ -70,7 +70,7 @@
     "bg": "bg-neutral",
     "pattern": "bg-pattern-grid",
     "height": "baseHeight",
-    "link": "practical/"
+    "link": "practical"
   },
   {
     "id": 9,
@@ -81,7 +81,7 @@
     "pattern": "bg-pattern-lights",
     "colSpan": "colSpanWider",
     "height": "tightHeight",
-    "link": "stories/"
+    "link": "stories"
   },
   {
     "id": 10,

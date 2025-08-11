@@ -50,17 +50,17 @@ function App() {
           {/* PAGES */}
           <Route index element={<MainPage />} />
           {/* GRID */}
-          <Route path="food/" element={<FoodPage />} />
-          <Route path="hotel/" element={<HotelPage />} />
-          <Route path="dining/" element={<DiningPage />} />
-          <Route path="festivals/" element={<FestivalsPage />} />
-          <Route path="directions/" element={<DirectionsPage />} />
-          <Route path="places/" element={<PlacesPage />} />
-          <Route path="heritage/" element={<HeritagePage />} />
-          <Route path="practical/" element={<PracticalPage />} />
-          <Route path="stories/" element={<StoriesPage />} />
+          <Route path="/food" element={<FoodPage />} />
+          <Route path="/hotel" element={<HotelPage />} />
+          <Route path="/dining" element={<DiningPage />} />
+          <Route path="/festivals" element={<FestivalsPage />} />
+          <Route path="/directions" element={<DirectionsPage />} />
+          <Route path="/places" element={<PlacesPage />} />
+          <Route path="/heritage" element={<HeritagePage />} />
+          <Route path="/practical" element={<PracticalPage />} />
+          <Route path="/stories" element={<StoriesPage />} />
 
-          <Route path="form/" element={<FeedbackPage />} />
+          <Route path="/form" element={<FeedbackPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>
