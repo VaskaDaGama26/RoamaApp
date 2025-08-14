@@ -17,7 +17,7 @@ const Footer = () => {
             <img
               className="w-fit h-[40px] duration-300 transform hover:scale-95"
               src={footerLOGO}
-              alt=""
+              alt="RoamaApp Logo"
             />
           </Link>
         </div>
@@ -38,13 +38,13 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-row gap-2.5">
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer" href="#" aria-label="VKontakte">
                 <VKontakte className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.vk-path]:fill-[url(#icon-gradient)]" />
               </a>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer" href="#" aria-label="Telegram">
                 <Telegram className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.telegram-path]:fill-[url(#icon-gradient)]" />
               </a>
-              <a className="cursor-pointer" href="#">
+              <a className="cursor-pointer" href="#" aria-label="Youtube">
                 <Youtube className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.youtube-path]:fill-[url(#icon-gradient)]" />
               </a>
             </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             </p>
             <a target="_blank" rel="noopener noreferrer" href="https://t.me/vaskadagamaa26">
               <img
-                className="h-[30px] rounded-full duration-300 transform hover:-translate-y-1"
+                className="h-8 w-8 rounded-full duration-300 transform hover:-translate-y-1"
                 src={logoKV}
                 alt="Developed by Vasiliy Kirichenko"
               />

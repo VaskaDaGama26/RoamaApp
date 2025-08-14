@@ -17,11 +17,11 @@ const DirectionBlock = ({ data }: { data: DirectionItemType[] }) => {
           />
           <div className="flex flex-col gap-2 sm:gap-0 sm:flex-row justify-between">
             <p className="text-gray-500 flex flex-row gap-1 items-center text-sm lg:text-base">
-              <img className="h-6" src={hintIcon} alt="" />
+              <img className="h-6" src={hintIcon} alt="Hint Icon" />
               {item.hint}
             </p>
             <p className="text-gray-500 flex flex-row gap-1 items-center text-sm lg:text-base">
-              <img className="h-6" src={pathIcon} alt="" />
+              <img className="h-6" src={pathIcon} alt="Transport Icon" />
               {item.transport}
             </p>
           </div>

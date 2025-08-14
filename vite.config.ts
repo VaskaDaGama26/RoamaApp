@@ -4,6 +4,23 @@ import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { VitePWA } from 'vite-plugin-pwa';
+import Sitemap from 'vite-plugin-sitemap';
+
+const routes = [
+  '/',
+  '/food',
+  '/hotel',
+  '/dining',
+  '/festivals',
+  '/directions',
+  '/places',
+  '/heritage',
+  '/practical',
+  '/stories',
+  '/form',
+];
+
+const dynamicRoutes = routes.map((route) => `/RoamaApp/${route}`);
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,6 +29,10 @@ export default defineConfig({
     tailwindcss(),
     svgr(),
     visualizer({ open: true }),
+    Sitemap({
+      hostname: 'https://vaskadagama26.github.io/RoamaApp/',
+      dynamicRoutes,
+    }),
     VitePWA({
       base: '/RoamaApp/',
       registerType: 'autoUpdate', // автообновление service worker

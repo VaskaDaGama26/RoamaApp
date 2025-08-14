@@ -29,7 +29,7 @@ const AppsBlock = ({ data }: { data: AppData[] }) => {
                     className="cursor-pointer duration-300 hover:scale-95"
                     href={app.googleLink}
                   >
-                    <img className="h-8" src={googlePlay} alt="" />
+                    <img className="h-8" src={googlePlay} alt="Google Play Link" />
                   </a>
                 )}
                 {app.appleLink && (
@@ -39,7 +39,7 @@ const AppsBlock = ({ data }: { data: AppData[] }) => {
                     className="cursor-pointer duration-300 hover:scale-95"
                     href={app.appleLink}
                   >
-                    <img className="h-8" src={appStore} alt="" />
+                    <img className="h-8" src={appStore} alt="App Store Link" />
                   </a>
                 )}
               </div>

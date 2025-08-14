@@ -31,7 +31,7 @@ const Header = () => {
       <div className="relative text-lg/tight font-medium w-full h-14 sm:mx-0 mx-2.5 px-5 flex flex-row justify-between items-center">
         {/* LOGO */}
         <Link to="/">
-          <img className="h-9 duration-300 transform hover:scale-95" src={logo} alt="Roama" />
+          <img className="w-fit h-9 duration-300 transform hover:scale-95" src={logo} alt="Roama" />
         </Link>
         {/* NAV */}
         <nav

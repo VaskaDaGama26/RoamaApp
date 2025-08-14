@@ -8,7 +8,7 @@ const AnimatedTitle = ({ title, testId }: { title: string; testId: string | unde
     <motion.div
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative inline-block overflow-hidden h-fit sm:h-[60px]"
+      className="relative inline-block overflow-hidden h-[28px] sm:h-[60px]"
     >
       <motion.h1
         animate={{ y: isHovered ? '-100%' : '0%' }}
