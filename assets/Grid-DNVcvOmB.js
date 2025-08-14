@@ -1,1 +1,0 @@
-import{j as t,m as o,R as d}from"./index-B3pgHyfW.js";const c=({id:a,gridClass:i,data:e,renderItem:s})=>t.jsx(o.div,{initial:{opacity:0,y:50},animate:{opacity:1,y:0},transition:{duration:.5,ease:"easeOut"},id:a,"data-testid":"test-grid",className:i,children:e.map((r,n)=>t.jsx(d.Fragment,{children:s(r)},n))});export{c as G};

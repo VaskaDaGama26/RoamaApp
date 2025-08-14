@@ -1,1 +1,0 @@
-import{j as t}from"./index-B3pgHyfW.js";const x=({label:s,image:e,imageClasses:r})=>t.jsxs("div",{className:"relative w-full flex flex-row justify-center",children:[t.jsx("h2",{className:"text-xl/tight sm:text-2xl/tight text-center w-fit font-semibold pb-1 border-b-2 border-(--gray25)",children:s}),t.jsx("img",{className:`absolute ${r}`,src:e,alt:e})]});export{x as B};
