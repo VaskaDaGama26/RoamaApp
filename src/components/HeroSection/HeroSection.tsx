@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 interface Props {
   heading: string;
-  description: string;
+  description?: string;
   testId?: string;
 }
 

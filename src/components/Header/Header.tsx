@@ -8,8 +8,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Header = ({ initialMenuOpen = false }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(initialMenuOpen);
   const navigate = useNavigate();
 
   const handleStart = () => {
