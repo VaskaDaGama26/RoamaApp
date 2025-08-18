@@ -1,5 +1,6 @@
 import Header from './Header';
 import '../../index.css';
+import '../../colors.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 export default {

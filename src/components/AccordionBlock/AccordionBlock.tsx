@@ -7,10 +7,11 @@ type AccordionData = {
 
 type AccordionBlockProps = {
   data: AccordionData[];
+  defaultOpenIndex?: number | null;
 };
 
-const AccordionBlock = ({ data }: AccordionBlockProps) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+const AccordionBlock = ({ data, defaultOpenIndex = 0 }: AccordionBlockProps) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(defaultOpenIndex ?? null);
 
   const handleClick = (index: number) => {
     setOpenIndex((prev) => (prev === index ? null : index));
@@ -27,7 +28,7 @@ const AccordionBlock = ({ data }: AccordionBlockProps) => {
           >
             <button
               onClick={() => handleClick(index)}
-              className="w-full cursor-pointer flex justify-between items-center px-6 py-4 text-left text-purple-700 font-semibold text-base sm:text-lg hover:bg-purple-50 transition-colors"
+              className="w-full cursor-pointer flex gap-4 justify-between items-center px-6 py-4 text-left text-purple-700 font-semibold text-base sm:text-lg hover:bg-purple-50 transition-colors"
             >
               {item.title}
               <span className="text-xl">{isOpen ? '−' : '+'}</span>

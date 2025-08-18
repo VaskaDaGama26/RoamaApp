@@ -94,7 +94,11 @@ const FeedbackForm = () => {
 
       {/* TOAST */}
       {toastVisible && (
-        <Toast message="Спасибо за ваш отзыв! 💜" onClose={() => setToastVisible(false)} />
+        <Toast
+          timeout={5000}
+          message="Спасибо за ваш отзыв! 💜"
+          onClose={() => setToastVisible(false)}
+        />
       )}
 
       {/* Оценка */}

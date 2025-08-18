@@ -1,6 +1,7 @@
 // CSF3
 import HeroSection from './HeroSection';
 import '../../index.css';
+import '../../colors.css';
 
 export default {
   title: 'components/HeroSection',

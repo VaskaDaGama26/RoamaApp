@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Toast from './Toast';
 import { useState } from 'react';
 import '../../index.css';
+import '../../colors.css';
 
 const meta: Meta<typeof Toast> = {
   title: 'components/Toast',
@@ -36,7 +37,9 @@ export const WithControl = () => {
       >
         Показать тост
       </button>
-      {visible && <Toast message="Привет из Storybook 👋" onClose={() => setVisible(false)} />}
+      {visible && (
+        <Toast timeout={1000} message="Привет из Storybook 👋" onClose={() => setVisible(false)} />
+      )}
     </>
   );
 };

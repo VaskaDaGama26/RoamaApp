@@ -1,22 +1,49 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './Toast.css';
 
-const Toast = ({ message, onClose }: { message: string; onClose: () => void }) => {
+interface ToastProps {
+  message: string;
+  onClose: () => void;
+  timeout?: number;
+}
+
+const Toast = ({ message, onClose, timeout }: ToastProps) => {
+  const [closing, setClosing] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    const timer = setTimeout(onClose, 5000);
+    if (timeout === undefined) return;
+
+    const timer = setTimeout(() => setClosing(true), timeout);
     return () => clearTimeout(timer);
-  }, [onClose]);
+  }, [timeout]);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    const node = ref.current;
+
+    const handleAnimationEnd = () => {
+      if (closing) onClose();
+    };
+
+    node.addEventListener('animationend', handleAnimationEnd);
+    return () => node.removeEventListener('animationend', handleAnimationEnd);
+  }, [closing, onClose]);
 
   return (
     <div
-      className="
-          fixed top-5 right-5
-          bg-purple-700 text-white
-          px-5 py-3 rounded-lg
-          shadow-lg
-          animate-fadeInOut
-          z-[1100]
-        "
+      ref={ref}
+      onClick={() => setClosing(true)}
+      className={`
+        fixed top-5 right-5
+        bg-purple-700 text-white
+        px-5 py-3 rounded-lg
+        shadow-lg
+        cursor-pointer
+        z-[1100]
+        toast
+        ${closing ? 'animate-fadeOut' : 'animate-fadeIn'}
+      `}
       role="alert"
     >
       {message}
