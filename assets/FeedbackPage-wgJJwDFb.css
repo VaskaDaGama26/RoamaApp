@@ -1,0 +1,1 @@
+@keyframes fadeIn{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeOut{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-20px)}}.toast{transition:opacity .3s ease,transform .3s ease}.animate-fadeIn{animation:fadeIn .3s ease forwards}.animate-fadeOut{animation:fadeOut .3s ease forwards}
