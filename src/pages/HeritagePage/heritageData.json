@@ -3,10 +3,7 @@
     "era": "Современность",
     "title": "Музей Акрополя, Афины",
     "image": "static/heritage/akropol/akropol-1.jpg",
-    "gallery": [
-      "static/heritage/akropol/akropol-2.jpg",
-      "static/heritage/akropol/akropol-3.jpg"
-    ],
+    "gallery": ["static/heritage/akropol/akropol-2.jpg", "static/heritage/akropol/akropol-3.jpg"],
     "year": "2009",
     "description": "Современное здание у подножия Акрополя с артефактами Древней Греции.",
     "howToGetThere": "Метро Acropolis, пешком 3 мин.",

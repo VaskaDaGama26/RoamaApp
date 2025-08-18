@@ -9,7 +9,10 @@
       "В Мехико в дни праздника устраивают шумное карнавальное шествие, где люди в ярких костюмах, с разрисованными цветами и черепами лицами поют, танцуют и смеются. А самый известный карнавальный образ — символ смерти Катрина — женщина с черепом вместо лица, одетая в элегантное платье и вуаль. Любопытно, что это не типичный фольклорный персонаж, а героиня карикатуры 1913 года мексиканского художника Хосе Гуадалупе Посады. Своей гравюрой он высмеивал соотечественников, подражавших европейцам. Следом Катрина появилась на полотне другого известного мексиканца — Диего Риверы. И так запомнилась публике, что стала чуть ли не самым известным мексиканским персонажем."
     ],
     "video": "static/events/diaDeLosMuertos/diaDeLosMuertos.mp4",
-    "imageGallery": ["static/events/diaDeLosMuertos/diaDeLosMuertos-1.jpg", "static/events/diaDeLosMuertos/diaDeLosMuertos-2.jpg"],
+    "imageGallery": [
+      "static/events/diaDeLosMuertos/diaDeLosMuertos-1.jpg",
+      "static/events/diaDeLosMuertos/diaDeLosMuertos-2.jpg"
+    ],
     "time": "Между 1 и 2 ноября",
     "place": "По всей Мексике",
     "link": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BC%D1%91%D1%80%D1%82%D0%B2%D1%8B%D1%85#:~:text=%D0%94%D0%B5%D0%BD%D1%8C%20%D0%BC%D1%91%D1%80%D1%82%D0%B2%D1%8B%D1%85%20(%D0%B8%D1%81%D0%BF.,%D1%83%D0%BC%D0%B5%D1%80%D1%88%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B0%D1%8E%D1%82%20%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%BE%D0%BC."
@@ -22,7 +25,10 @@
       "Самым первым идёт отряд ярла Гизера, короля викингов, которого комитет фестиваля выбирает каждый год. Храбрые воины несут к побережью корабль викингов драккар, а затем поджигают, отдавая дань традициям: так викинги издревле хоронили королей и воинов. Празднование с танцами и весёлыми песнями длится до самого утра."
     ],
     "video": "static/events/upHellyAa/upHellyAa.mp4",
-    "imageGallery": ["static/events/upHellyAa/upHellyAa-1.jpg", "static/events/upHellyAa/upHellyAa-2.jpg"],
+    "imageGallery": [
+      "static/events/upHellyAa/upHellyAa-1.jpg",
+      "static/events/upHellyAa/upHellyAa-2.jpg"
+    ],
     "time": "Последний вторник января",
     "place": "Леруик, Шетландские Острова, Шотландия",
     "link": "https://ru.wikipedia.org/wiki/Up_Helly_Aa"
@@ -52,7 +58,10 @@
       "Параллельно по всему городу проходят районные карнавалы, так что приехать в Рио и остаться в стороне от празднества не получится."
     ],
     "video": "static/events/rioCarnival/rioCarnival.mp4",
-    "imageGallery": ["static/events/rioCarnival/rioCarnival-1.jpg", "static/events/rioCarnival/rioCarnival-2.jpg"],
+    "imageGallery": [
+      "static/events/rioCarnival/rioCarnival-1.jpg",
+      "static/events/rioCarnival/rioCarnival-2.jpg"
+    ],
     "time": "Конец февраля - начало марта",
     "place": "Рио-де-Жанейро",
     "link": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BD%D0%B0%D0%B2%D0%B0%D0%BB_%D0%B2_%D0%A0%D0%B8%D0%BE-%D0%B4%D0%B5-%D0%96%D0%B0%D0%BD%D0%B5%D0%B9%D1%80%D0%BE"

@@ -11,15 +11,15 @@ const mockData = [
 describe('AccordionBlock', () => {
   it('renders all accordion items', () => {
     render(<AccordionBlock data={mockData} />);
-    
-    mockData.forEach(item => {
+
+    mockData.forEach((item) => {
       expect(screen.getByText(item.title)).toBeInTheDocument();
     });
   });
 
   it('opens and closes accordion items on click', () => {
     render(<AccordionBlock data={mockData} />);
-    
+
     const firstButton = screen.getByText('Title 1');
     const secondButton = screen.getByText('Title 2');
 
