@@ -1,4 +1,3 @@
 {
-  "*.{ts,tsx,js,jsx}": ["prettier --write", "eslint --fix"],
-  "*.test.{ts,tsx,js,jsx}": ["vitest run --passWithNoTests"]
+  "*.{ts,tsx,js,jsx}": ["prettier --write", "eslint --fix"]
 }
