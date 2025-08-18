@@ -1,50 +1,51 @@
-import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
+import { render, screen, fireEvent } from '@testing-library/react';
 import AccordionBlock from './AccordionBlock';
 
+const mockData = [
+  { title: 'Title 1', text: 'Content 1' },
+  { title: 'Title 2', text: 'Content 2' },
+  { title: 'Title 3', text: 'Content 3' },
+];
+
 describe('AccordionBlock', () => {
-  const mockData = [
-    { title: 'Заголовок 1', text: 'Текст 1' },
-    { title: 'Заголовок 2', text: 'Текст 2' },
-    { title: 'Заголовок 3', text: 'Текст 3' },
-  ];
-
-  it('renders correct number of items', () => {
+  it('renders all accordion items', () => {
     render(<AccordionBlock data={mockData} />);
-    const buttons = screen.getAllByRole('button');
-    expect(buttons.length).toBe(mockData.length);
-
-    mockData.forEach((item) => {
+    
+    mockData.forEach(item => {
       expect(screen.getByText(item.title)).toBeInTheDocument();
-    });
-  });
-
-  it('by default all items are closed', () => {
-    render(<AccordionBlock data={mockData} />);
-    mockData.forEach((_, index) => {
-      const contentElement = screen.getByTestId(`accordion-content-${index}`);
-      expect(contentElement).toHaveClass('opacity-0');
     });
   });
 
   it('opens and closes accordion items on click', () => {
     render(<AccordionBlock data={mockData} />);
-    const buttons = screen.getAllByRole('button');
+    
+    const firstButton = screen.getByText('Title 1');
+    const secondButton = screen.getByText('Title 2');
 
-    fireEvent.click(buttons[0]);
-    const content0 = screen.getByTestId('accordion-content-0');
-    expect(content0).toHaveClass('opacity-100');
-    expect(buttons[0].textContent?.includes('−')).toBeTruthy();
+    // По умолчанию первый открыт (defaultOpenIndex = 0)
+    expect(screen.getByTestId('accordion-content-0')).toHaveClass('max-h-[500px]');
+    expect(firstButton).toHaveTextContent('−');
 
-    const content1 = screen.getByTestId('accordion-content-1');
-    expect(content1).toHaveClass('opacity-0');
+    // Клик по первому — закрывает
+    fireEvent.click(firstButton);
+    expect(screen.getByTestId('accordion-content-0')).toHaveClass('max-h-0');
+    expect(firstButton).toHaveTextContent('+');
 
-    fireEvent.click(buttons[1]);
-    expect(content1).toHaveClass('opacity-100');
-    expect(buttons[1].textContent?.includes('−')).toBeTruthy();
-    expect(content0).toHaveClass('opacity-0');
+    // Клик по второму — открывает его
+    fireEvent.click(secondButton);
+    expect(screen.getByTestId('accordion-content-1')).toHaveClass('max-h-[500px]');
+    expect(secondButton).toHaveTextContent('−');
 
-    fireEvent.click(buttons[1]);
-    expect(content1).toHaveClass('opacity-0');
+    // Первый теперь закрыт
+    expect(screen.getByTestId('accordion-content-0')).toHaveClass('max-h-0');
+  });
+
+  it('renders with defaultOpenIndex = null', () => {
+    render(<AccordionBlock data={mockData} defaultOpenIndex={null} />);
+
+    mockData.forEach((_, index) => {
+      expect(screen.getByTestId(`accordion-content-${index}`)).toHaveClass('max-h-0');
+    });
   });
 });
