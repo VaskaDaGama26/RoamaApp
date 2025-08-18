@@ -3,7 +3,7 @@ import FeedbackForm from './FeedbackForm/FeedbackForm';
 
 const FeedbackPage = () => {
   return (
-    <div className="max-w-[1020px] mx-auto mt-12 mb-20">
+    <div className="mx-auto mt-12 mb-20 max-w-[1020px]">
       <HeroSection
         testId="feedback"
         heading="Будь в курсе"

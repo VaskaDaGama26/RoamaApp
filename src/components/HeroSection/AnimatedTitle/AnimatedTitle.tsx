@@ -8,7 +8,7 @@ const AnimatedTitle = ({ title, testId }: { title: string; testId: string | unde
     <motion.div
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative inline-block overflow-hidden h-[28px] sm:h-[60px]"
+      className="relative inline-block h-[28px] overflow-hidden sm:h-[60px]"
     >
       <motion.h1
         animate={{ y: isHovered ? '-100%' : '0%' }}
@@ -20,7 +20,7 @@ const AnimatedTitle = ({ title, testId }: { title: string; testId: string | unde
           velocity: 2,
         }}
         data-testid={`hero-heading-${testId}`}
-        className="block text-2xl leading-6 sm:text-5xl sm:leading-14 font-semibold cursor-default"
+        className="block cursor-default text-2xl leading-6 font-semibold sm:text-5xl sm:leading-14"
       >
         {title}
       </motion.h1>
@@ -38,7 +38,7 @@ const AnimatedTitle = ({ title, testId }: { title: string; testId: string | unde
           mass: 1,
           velocity: 2,
         }}
-        className="block text-2xl leading-6 sm:text-5xl sm:leading-14 font-semibold absolute top-0 left-0 cursor-default"
+        className="absolute top-0 left-0 block cursor-default text-2xl leading-6 font-semibold sm:text-5xl sm:leading-14"
       >
         {title}
       </motion.span>

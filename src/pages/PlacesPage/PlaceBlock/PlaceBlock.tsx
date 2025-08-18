@@ -25,8 +25,8 @@ const PlaceBlock = ({ data }: { data: PlaceItemData[] }) => {
 
   return (
     <>
-      <div className="flex flex-col px-2.5 mx-[52px] items-end gap-2">
-        <p className="cursor-default text-xs rotate-z-3 text-(--gray)">Нажмите на карточку...</p>
+      <div className="mx-[52px] flex flex-col items-end gap-2 px-2.5">
+        <p className="rotate-z-3 cursor-default text-xs text-(--gray)">Нажмите на карточку...</p>
         <img className="h-20" src={chooseIcon} alt="Choose Card" />
       </div>
 
@@ -42,28 +42,28 @@ const PlaceBlock = ({ data }: { data: PlaceItemData[] }) => {
       {selectedPlace && (
         <div
           data-testid="overlay"
-          className="fixed inset-0 pt-12 z-[1002] bg-[#000000b4] flex items-center justify-center"
+          className="fixed inset-0 z-[1002] flex items-center justify-center bg-[#000000b4] pt-12"
           onClick={closeOverlay}
         >
           <div
-            className="relative mx-2.5 md:mx-0 w-full md:w-3/5 h-[80vh] flex flex-col lg:flex-row bg-slate-900 rounded-xl overflow-hidden"
+            className="relative mx-2.5 flex h-[80vh] w-full flex-col overflow-hidden rounded-xl bg-slate-900 md:mx-0 md:w-3/5 lg:flex-row"
             onClick={(e) => e.stopPropagation()}
           >
             <LazyMediaWithSkeleton
               type="video"
               height="100%"
-              className="w-full lg:w-2/5 shadow-xl object-contain"
+              className="w-full object-contain shadow-xl lg:w-2/5"
               src={`${import.meta.env.BASE_URL}${selectedPlace.video}`}
             />
-            <div className="w-full lg:w-3/5 flex flex-col gap-4 h-full p-6 text-white overflow-y-auto">
-              <h2 className="text-base font-semibold border-b pb-2 border-gray-800">
+            <div className="flex h-full w-full flex-col gap-4 overflow-y-auto p-6 text-white lg:w-3/5">
+              <h2 className="border-b border-gray-800 pb-2 text-base font-semibold">
                 {selectedPlace.title}
               </h2>
               {selectedPlace.desc && (
-                <p className="text-slate-400 text-sm/relaxed">{selectedPlace.desc}</p>
+                <p className="text-sm/relaxed text-slate-400">{selectedPlace.desc}</p>
               )}
               {selectedPlace.author && (
-                <p className="text-slate-700 text-right underline text-sm/relaxed">
+                <p className="text-right text-sm/relaxed text-slate-700 underline">
                   {selectedPlace.author}
                 </p>
               )}

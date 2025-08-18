@@ -7,7 +7,7 @@ const DiningPage = () => {
   const data = getChartData();
 
   return (
-    <div className="max-w-[1020px] mx-auto mt-12 mb-20">
+    <div className="mx-auto mt-12 mb-20 max-w-[1020px]">
       <HeroSection
         testId="dining"
         heading="Знаменитые заведения мира"

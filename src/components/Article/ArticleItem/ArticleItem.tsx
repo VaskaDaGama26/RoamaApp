@@ -16,17 +16,17 @@ const ArticleItem = ({ item }: { item: ArticleItemType }) => {
           type="video"
           src={`${import.meta.env.BASE_URL}${item.video}`}
           height="320px"
-          className="rounded-md h-80 w-full object-cover object-bottom"
+          className="h-80 w-full rounded-md object-cover object-bottom"
         />
       )}
       <ArticleParagraphBlock paragraphs={item.textParagraphs.slice(2)} />
       {/* Images */}
       {item.imageGallery && (
-        <div data-testid="gallery" className="flex flex-col lg:flex-row w-full gap-8 items-center">
+        <div data-testid="gallery" className="flex w-full flex-col items-center gap-8 lg:flex-row">
           {item.imageGallery.map((image, index) => (
             <LazyMediaWithSkeleton
               type="image"
-              className="rounded-md max-h-80"
+              className="max-h-80 rounded-md"
               key={index}
               src={`${import.meta.env.BASE_URL}${image}`}
               alt={item.title}

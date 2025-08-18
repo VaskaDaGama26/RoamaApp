@@ -7,17 +7,17 @@ const WelcomeSection = () => {
   return (
     <>
       <link rel="preload" fetchPriority="high" as="image" href={world} type="image/svg+xml" />
-      <section className="hero max-w-[1020px] mx-auto mt-12 mb-20 px-2.5 lg:px-0 relative">
+      <section className="hero relative mx-auto mt-12 mb-20 max-w-[1020px] px-2.5 lg:px-0">
         {/* World */}
         <img
           data-testid="world-img"
-          className="world mb-5 lg:mb-0 w-fit h-20 sm:h-28"
+          className="world mb-5 h-20 w-fit sm:h-28 lg:mb-0"
           src={world}
           aria-hidden="true"
           alt=""
         />
-        <div className="flex flex-col gap-5 items-center justify-center">
-          <div className="text-2xl/tight sm:text-5xl/tight text-center font-semibold">
+        <div className="flex flex-col items-center justify-center gap-5">
+          <div className="text-center text-2xl/tight font-semibold sm:text-5xl/tight">
             <TypewriterComponent
               options={{
                 strings: ['Открой мир вместе с ROAMA', 'Путешествуй по-новому'],
@@ -26,15 +26,15 @@ const WelcomeSection = () => {
               }}
             />
           </div>
-          <p className="text-sm/tight sm:text-base/tight text-center tracking-tight">
+          <p className="text-center text-sm/tight tracking-tight sm:text-base/tight">
             Твоё приключение начинается здесь — среди дорог, ветра и горизонтов
           </p>
         </div>
         {/* Traveller */}
-        <div className="absolute right-[10px] translate-y-[20px] group h-fit ">
+        <div className="group absolute right-[10px] h-fit translate-y-[20px]">
           <img
             data-testid="traveller-img"
-            className="w-fit h-20 sm:h-28 transition-transform duration-300 group-hover:translate-y-[60px]"
+            className="h-20 w-fit transition-transform duration-300 group-hover:translate-y-[60px] sm:h-28"
             src={traveller}
             aria-hidden="true"
             alt=""

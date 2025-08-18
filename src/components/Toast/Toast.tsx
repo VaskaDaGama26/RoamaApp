@@ -34,16 +34,7 @@ const Toast = ({ message, onClose, timeout }: ToastProps) => {
     <div
       ref={ref}
       onClick={() => setClosing(true)}
-      className={`
-        fixed top-5 right-5
-        bg-purple-700 text-white
-        px-5 py-3 rounded-lg
-        shadow-lg
-        cursor-pointer
-        z-[1100]
-        toast
-        ${closing ? 'animate-fadeOut' : 'animate-fadeIn'}
-      `}
+      className={`toast fixed top-5 right-5 z-[1100] cursor-pointer rounded-lg bg-purple-700 px-5 py-3 text-white shadow-lg ${closing ? 'animate-fadeOut' : 'animate-fadeIn'} `}
       role="alert"
     >
       {message}

@@ -12,17 +12,17 @@ const ArticleDetails = ({
   link?: string;
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between w-full items-start">
+    <div className="flex w-full flex-col items-start justify-between gap-4 lg:flex-row lg:gap-0">
       {(place || time) && (
         <div className="flex flex-col gap-2 text-sm lg:text-base">
           {place && (
-            <p className="text-gray-500 flex flex-row gap-1">
+            <p className="flex flex-row gap-1 text-gray-500">
               <img src={pathIcon} alt="Место проведения" />
               {place}
             </p>
           )}
           {time && (
-            <p className="text-gray-500 flex flex-row gap-1">
+            <p className="flex flex-row gap-1 text-gray-500">
               <img src={calendarIcon} alt="Время проведения" />
               {time}
             </p>
@@ -32,14 +32,14 @@ const ArticleDetails = ({
 
       {link && (
         <a
-          className="text-gray-500 text-sm lg:text-base flex flex-row gap-1 items-center group transition-transform"
+          className="group flex flex-row items-center gap-1 text-sm text-gray-500 transition-transform lg:text-base"
           target="_blank"
           rel="noopener noreferrer"
           href={link}
         >
           Подробнее
           <img
-            className="duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 mt-1 w-4 h-4"
+            className="mt-1 h-4 w-4 duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             src={moreIcon}
             alt="Подробнее"
           />

@@ -6,7 +6,7 @@ const PlacesPage = () => {
   const data = placesData;
 
   return (
-    <div className="max-w-[1020px] mx-auto mt-12">
+    <div className="mx-auto mt-12 max-w-[1020px]">
       <HeroSection
         testId="places"
         heading="Места с вау-видом"

@@ -6,14 +6,14 @@ interface Props {
 
 const FilterButtons = ({ continents, activeContinent, onSelect }: Props) => {
   return (
-    <div className="flex flex-wrap gap-2 justify-start mb-4">
+    <div className="mb-4 flex flex-wrap justify-start gap-2">
       {/* All diners */}
       <button
         onClick={() => onSelect(null)}
-        className={`px-4 py-1.5 cursor-pointer rounded-full border text-sm font-medium transition ${
+        className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm font-medium transition ${
           activeContinent === null
-            ? 'bg-(--purple) text-white border-(--purple)'
-            : 'bg-white text-gray-700 border-gray-300 hover:border-(--purpleHover)'
+            ? 'border-(--purple) bg-(--purple) text-white'
+            : 'border-gray-300 bg-white text-gray-700 hover:border-(--purpleHover)'
         }`}
       >
         Все
@@ -23,10 +23,10 @@ const FilterButtons = ({ continents, activeContinent, onSelect }: Props) => {
         <button
           key={continent}
           onClick={() => onSelect(continent === activeContinent ? null : continent)}
-          className={`px-4 py-1.5 cursor-pointer rounded-full border text-sm font-medium transition ${
+          className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm font-medium transition ${
             activeContinent === continent
-              ? 'bg-(--purple) text-white border-(--purple)'
-              : 'bg-white text-gray-700 border-gray-300 hover:border-(--purpleHover)'
+              ? 'border-(--purple) bg-(--purple) text-white'
+              : 'border-gray-300 bg-white text-gray-700 hover:border-(--purpleHover)'
           }`}
         >
           {continent}

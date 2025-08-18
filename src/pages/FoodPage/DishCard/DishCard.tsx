@@ -3,10 +3,10 @@ import LazyMediaWithSkeleton from '../../../components/LazyMediaWithSkeleton/Laz
 
 const DishCard = ({ item }: { item: DishItemData }) => {
   return (
-    <article className="p-5 bg-(--bg-neutral) duration-300 hover:bg-(--bg-neutralHover) rounded-[6px] w-full card">
+    <article className="card w-full rounded-[6px] bg-(--bg-neutral) p-5 duration-300 hover:bg-(--bg-neutralHover)">
       <a
         data-testid="link"
-        className="flex flex-col gap-2 justify-between"
+        className="flex flex-col justify-between gap-2"
         target="_blank"
         rel="noopener noreferrer"
         href={item.link}
@@ -18,8 +18,8 @@ const DishCard = ({ item }: { item: DishItemData }) => {
           src={item.image}
           alt={item.title}
         />
-        <p className="h-fit text-sm sm:text-base font-medium">{item.title}</p>
-        <p className="hidden sm:block text-sm font-light">{item.desc}</p>
+        <p className="h-fit text-sm font-medium sm:text-base">{item.title}</p>
+        <p className="hidden text-sm font-light sm:block">{item.desc}</p>
       </a>
     </article>
   );

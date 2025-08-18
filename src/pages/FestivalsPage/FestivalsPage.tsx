@@ -4,7 +4,7 @@ import festivalsData from './festivalsData.json';
 
 const FestivalsPage = () => {
   return (
-    <div className="max-w-[1020px] mx-auto mt-12 mb-24">
+    <div className="mx-auto mt-12 mb-24 max-w-[1020px]">
       <HeroSection
         testId="festivals"
         heading="Культуры и традиции"

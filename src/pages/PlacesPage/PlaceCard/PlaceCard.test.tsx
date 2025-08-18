@@ -7,8 +7,8 @@ describe('PlaceCard', () => {
   it('renders articles with working click handler', () => {
     const handleClick = vi.fn();
 
-    render(<PlaceCard click={handleClick} title="Heading Test" image='test/path.png' />);
- 
+    render(<PlaceCard click={handleClick} title="Heading Test" image="test/path.png" />);
+
     const article = screen.getByRole('article');
     fireEvent.click(article);
 

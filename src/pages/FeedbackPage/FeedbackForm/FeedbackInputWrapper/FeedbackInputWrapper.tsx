@@ -11,7 +11,7 @@ const FeedbackInputWrapper = ({ label, error, children }: FeedbackInputWrapperPr
     <div className="flex flex-col gap-4">
       <label className="text-sm sm:text-base">{label}</label>
       {children}
-      {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+      {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
     </div>
   );
 };

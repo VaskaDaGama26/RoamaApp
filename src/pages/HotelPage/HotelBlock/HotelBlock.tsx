@@ -10,8 +10,8 @@ const HotelBlock = ({ data }: { data: HotelCardType[] }) => {
 
   return (
     <>
-      <div className="flex flex-col px-2.5 items-end gap-2">
-        <p className="cursor-default text-xs rotate-z-3 text-(--gray)">Нажмите на карточку...</p>
+      <div className="flex flex-col items-end gap-2 px-2.5">
+        <p className="rotate-z-3 cursor-default text-xs text-(--gray)">Нажмите на карточку...</p>
         <img className="h-20" src={chooseIcon} alt="Choose Card" />
       </div>
       <Grid

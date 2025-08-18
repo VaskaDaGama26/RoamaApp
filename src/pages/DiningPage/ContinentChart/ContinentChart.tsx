@@ -3,8 +3,8 @@ import type { ChartDataPoint } from '../types';
 
 const ContinentChart = ({ data }: { data: Array<ChartDataPoint> }) => {
   return (
-    <div className="w-full max-w-5xl mx-auto p-2.5 sm:p-4 bg-white shadow-md rounded-[6px]">
-      <h2 className="text-base/tight sm:text-xl/tight font-semibold mb-4 text-center">
+    <div className="mx-auto w-full max-w-5xl rounded-[6px] bg-white p-2.5 shadow-md sm:p-4">
+      <h2 className="mb-4 text-center text-base/tight font-semibold sm:text-xl/tight">
         Средний чек по материкам
       </h2>
       <ResponsiveContainer width="100%" height={300}>

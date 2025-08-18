@@ -8,7 +8,7 @@ const GridItem = ({ item }: { item: GridItemData }) => {
   const content = (
     <>
       <div className={`${item.pattern}`}></div>
-      <div className="contents lg:flex flex-col gap-2.5 z-10">
+      <div className="z-10 contents flex-col gap-2.5 lg:flex">
         {/* ICON */}
         {item.icon && (
           <img
@@ -31,7 +31,7 @@ const GridItem = ({ item }: { item: GridItemData }) => {
       <a
         download
         style={linkStyle}
-        className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
+        className={`grid_item ${item.direction === 'responsive' ? 'flex-row-reverse items-center lg:flex-col lg:items-start' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
         href={`${import.meta.env.BASE_URL}${item.download}`}
       >
         {content}
@@ -43,7 +43,7 @@ const GridItem = ({ item }: { item: GridItemData }) => {
       <Link
         to={item.link}
         style={linkStyle}
-        className={`grid_item ${item.direction === 'responsive' ? 'lg:flex-col lg:items-start items-center flex-row-reverse' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
+        className={`grid_item ${item.direction === 'responsive' ? 'flex-row-reverse items-center lg:flex-col lg:items-start' : 'flex-col'} ${item.height ? item.height : 'baseHeight'} ${item.bg ? item.bg : ''} ${item.colSpan ? item.colSpan : ''}`}
       >
         {content}
       </Link>

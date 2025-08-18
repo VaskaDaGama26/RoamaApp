@@ -10,27 +10,27 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer h-fit px-3 pt-[60px] pb-5">
-      <div className="max-w-[1020px] flex flex-col gap-[60px] mx-auto">
+      <div className="mx-auto flex max-w-[1020px] flex-col gap-[60px]">
         <div className="flex flex-row justify-center sm:justify-start">
           {/* LOGO */}
           <Link to="/">
             <img
-              className="w-fit h-[40px] duration-300 transform hover:scale-95"
+              className="h-[40px] w-fit transform duration-300 hover:scale-95"
               src={footerLOGO}
               alt="RoamaApp Logo"
             />
           </Link>
         </div>
         <div className="flex flex-col">
-          <div className="flex flex-col-reverse items-center gap-4 sm:gap-0 sm:flex-row justify-between pb-5">
-            <div className="flex flex-col gap-4 max-w-xl">
-              <a href="#" className="text-white text-sm/tight sm:text-lg/tight font-normal">
+          <div className="flex flex-col-reverse items-center justify-between gap-4 pb-5 sm:flex-row sm:gap-0">
+            <div className="flex max-w-xl flex-col gap-4">
+              <a href="#" className="text-sm/tight font-normal text-white sm:text-lg/tight">
                 Политика конфиденциальности
               </a>
               <a
                 target="_blank"
                 href="https://t.me/vaskadagamaa26"
-                className="text-(--gray) text-xs/relaxed sm:text-sm/relaxed font-normal"
+                className="text-xs/relaxed font-normal text-(--gray) sm:text-sm/relaxed"
               >
                 Сайт носит некоммерческий характер. Все материалы принадлежат их правообладателям и
                 используются исключительно в информационных целях. По вопросам удаления контента вы
@@ -39,24 +39,24 @@ const Footer = () => {
             </div>
             <div className="flex flex-row gap-2.5">
               <a className="cursor-pointer" href="#" aria-label="VKontakte">
-                <VKontakte className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.vk-path]:fill-[url(#icon-gradient)]" />
+                <VKontakte className="group transition-all duration-300 hover:-translate-y-1 hover:[&_path.vk-path]:fill-[url(#icon-gradient)]" />
               </a>
               <a className="cursor-pointer" href="#" aria-label="Telegram">
-                <Telegram className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.telegram-path]:fill-[url(#icon-gradient)]" />
+                <Telegram className="group transition-all duration-300 hover:-translate-y-1 hover:[&_path.telegram-path]:fill-[url(#icon-gradient)]" />
               </a>
               <a className="cursor-pointer" href="#" aria-label="Youtube">
-                <Youtube className="transition-all duration-300 hover:-translate-y-1 group hover:[&_path.youtube-path]:fill-[url(#icon-gradient)]" />
+                <Youtube className="group transition-all duration-300 hover:-translate-y-1 hover:[&_path.youtube-path]:fill-[url(#icon-gradient)]" />
               </a>
             </div>
           </div>
           <hr className="border-(--gray)" />
           <div className="flex flex-row items-center justify-between pt-4">
-            <p className="text-xs/tight sm:text-base/tight font-normal text-(--gray)">
+            <p className="text-xs/tight font-normal text-(--gray) sm:text-base/tight">
               Разработка: Кириченко Василий
             </p>
             <a target="_blank" rel="noopener noreferrer" href="https://t.me/vaskadagamaa26">
               <img
-                className="h-8 w-8 rounded-full duration-300 transform hover:-translate-y-1"
+                className="h-8 w-8 transform rounded-full duration-300 hover:-translate-y-1"
                 src={logoKV}
                 alt="Developed by Vasiliy Kirichenko"
               />

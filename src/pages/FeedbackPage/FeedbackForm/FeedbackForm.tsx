@@ -73,10 +73,10 @@ const FeedbackForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex relative flex-col gap-6 px-2.5 lg:px-0 mt-32 mx-auto max-w-3xl"
+      className="relative mx-auto mt-32 flex max-w-3xl flex-col gap-6 px-2.5 lg:px-0"
     >
-      <div className="flex flex-col px-2.5 items-end gap-4 absolute top-0 right-2.5 sm:right-0 -translate-y-[116px]">
-        <p className="cursor-default text-xs rotate-z-3 text-(--gray)">Потяни за картинку...</p>
+      <div className="absolute top-0 right-2.5 flex -translate-y-[116px] flex-col items-end gap-4 px-2.5 sm:right-0">
+        <p className="rotate-z-3 cursor-default text-xs text-(--gray)">Потяни за картинку...</p>
         <motion.img
           drag
           dragMomentum={false}
@@ -121,7 +121,7 @@ const FeedbackForm = () => {
                 <button
                   type="button"
                   key={m.value}
-                  className={`w-9 h-9 cursor-pointer text-2xl transition transform hover:scale-110 rounded-full ${field.value === m.value ? 'ring-2 ring-purple-700' : ''}`}
+                  className={`h-9 w-9 transform cursor-pointer rounded-full text-2xl transition hover:scale-110 ${field.value === m.value ? 'ring-2 ring-purple-700' : ''}`}
                   onClick={() => field.onChange(m.value)}
                 >
                   {m.emoji}
@@ -140,7 +140,7 @@ const FeedbackForm = () => {
         <textarea
           style={{ maxHeight: '200px' }}
           {...register('message')}
-          className="text-xs sm:text-sm border-b border-purple-300 focus:outline-0"
+          className="border-b border-purple-300 text-xs focus:outline-0 sm:text-sm"
         ></textarea>
       </FeedbackInputWrapper>
       {/* Email */}
@@ -148,18 +148,18 @@ const FeedbackForm = () => {
         <input
           required
           {...register('email')}
-          className="text-xs sm:text-sm border-b border-purple-300 focus:outline-0"
+          className="border-b border-purple-300 text-xs focus:outline-0 sm:text-sm"
           type="email"
         />
       </FeedbackInputWrapper>
       {/* Согласие */}
       <div>
-        <label className="text-sm sm:text-base inline-flex items-center gap-2 cursor-pointer accent-purple-700">
+        <label className="inline-flex cursor-pointer items-center gap-2 text-sm accent-purple-700 sm:text-base">
           <input {...register('agreement')} type="checkbox" />Я согласен на обработку персональных
           данных
         </label>
         {errors.agreement && (
-          <p className="text-red-500 text-sm mt-1">{errors.agreement.message}</p>
+          <p className="mt-1 text-sm text-red-500">{errors.agreement.message}</p>
         )}
       </div>
       {/* Submit */}
@@ -167,7 +167,7 @@ const FeedbackForm = () => {
         ref={dropZoneRef}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-(--purple) mx-auto duration-300 text-white text-sm rounded-2xl w-[300px] sm:text-base px-6 py-2 cursor-pointer"
+        className="mx-auto w-[300px] cursor-pointer rounded-2xl bg-(--purple) px-6 py-2 text-sm text-white duration-300 sm:text-base"
         type="submit"
       >
         Отправить

@@ -14,5 +14,10 @@ export const Default = () => {
 };
 
 export const WithLongLabel = () => {
-    return <MarqueeLabel label="меньше вещей — больше впечатлений и свободы, открой мир — каждое путешествие меняет тебя" icon={icon} />;
-}
+  return (
+    <MarqueeLabel
+      label="меньше вещей — больше впечатлений и свободы, открой мир — каждое путешествие меняет тебя"
+      icon={icon}
+    />
+  );
+};

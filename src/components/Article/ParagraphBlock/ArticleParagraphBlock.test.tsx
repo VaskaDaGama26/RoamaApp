@@ -3,11 +3,7 @@ import { describe, it, expect } from 'vitest';
 import ArticleParagraphBlock from './ArticleParagraphBlock';
 
 describe('ArticleParagraphBlock', () => {
-  const paragraphs = [
-    'Первый абзац текста.',
-    'Второй абзац текста.',
-    'Третий абзац текста.',
-  ];
+  const paragraphs = ['Первый абзац текста.', 'Второй абзац текста.', 'Третий абзац текста.'];
 
   it('renders all paragraphs', () => {
     render(<ArticleParagraphBlock paragraphs={paragraphs} />);

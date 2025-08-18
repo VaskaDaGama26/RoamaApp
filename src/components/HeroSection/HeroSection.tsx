@@ -19,7 +19,7 @@ const HeroSection = ({ heading, description, testId }: Props) => {
         <link rel="canonical" href={window.location.href} />
       </Helmet>
 
-      <section className="flex px-2.5 lg:px-0 mb-10 flex-col gap-5 items-start justify-center">
+      <section className="mb-10 flex flex-col items-start justify-center gap-5 px-2.5 lg:px-0">
         <AnimatedTitle title={heading} testId={testId} />
         <p data-testid="hero-description" className="text-sm/tight sm:text-base/tight">
           {description}

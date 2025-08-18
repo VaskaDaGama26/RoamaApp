@@ -8,7 +8,7 @@ import type { DishItemData } from './types';
 const FoodPage = () => {
   const data = placesData as DishItemData[];
   return (
-    <div className="max-w-[1020px] mx-auto mt-12">
+    <div className="mx-auto mt-12 max-w-[1020px]">
       <HeroSection
         testId="food"
         heading="Попробуйте планету на вкус"

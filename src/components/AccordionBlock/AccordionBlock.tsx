@@ -18,17 +18,17 @@ const AccordionBlock = ({ data, defaultOpenIndex = 0 }: AccordionBlockProps) => 
   };
 
   return (
-    <ul className="list-none flex flex-col gap-4 w-full mx-auto">
+    <ul className="mx-auto flex w-full list-none flex-col gap-4">
       {data.map((item, index) => {
         const isOpen = openIndex === index;
         return (
           <li
             key={index}
-            className="rounded-xl border border-neutral-300 overflow-hidden shadow-md bg-white transition-all duration-300"
+            className="overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-md transition-all duration-300"
           >
             <button
               onClick={() => handleClick(index)}
-              className="w-full cursor-pointer flex gap-4 justify-between items-center px-6 py-4 text-left text-purple-700 font-semibold text-base sm:text-lg hover:bg-purple-50 transition-colors"
+              className="flex w-full cursor-pointer items-center justify-between gap-4 px-6 py-4 text-left text-base font-semibold text-purple-700 transition-colors hover:bg-purple-50 sm:text-lg"
             >
               {item.title}
               <span className="text-xl">{isOpen ? '−' : '+'}</span>
@@ -36,11 +36,11 @@ const AccordionBlock = ({ data, defaultOpenIndex = 0 }: AccordionBlockProps) => 
 
             <div
               data-testid={`accordion-content-${index}`}
-              className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`overflow-hidden px-6 transition-all duration-500 ease-in-out ${
                 isOpen ? 'max-h-[500px] py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
               }`}
             >
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">{item.text}</p>
+              <p className="text-sm leading-relaxed text-gray-700 sm:text-base">{item.text}</p>
             </div>
           </li>
         );

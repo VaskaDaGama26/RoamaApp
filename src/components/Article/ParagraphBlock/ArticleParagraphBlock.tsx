@@ -1,7 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
 
 const ArticleParagraphBlock = ({ paragraphs }: { paragraphs: string[] }) => {
-
   const containerVariants = {
     hidden: { opacity: 1 },
     visible: {
@@ -33,7 +32,7 @@ const ArticleParagraphBlock = ({ paragraphs }: { paragraphs: string[] }) => {
         <motion.p
           key={index}
           variants={paragraphVariants}
-          className="text-sm/relaxed lg:text-base/relaxed text-justify indent-4"
+          className="text-justify indent-4 text-sm/relaxed lg:text-base/relaxed"
         >
           {paragraph}
         </motion.p>

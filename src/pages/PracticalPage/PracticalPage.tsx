@@ -8,7 +8,7 @@ const PracticalPage = () => {
   const checklistsDataObject = checklistData[0];
 
   return (
-    <div className="max-w-[1020px] mx-auto mt-12">
+    <div className="mx-auto mt-12 max-w-[1020px]">
       <HeroSection
         testId="practical"
         heading="Полезное и практичное"

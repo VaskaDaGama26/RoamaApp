@@ -6,7 +6,7 @@ const HeritagePage = () => {
   const data = heritageData;
 
   return (
-    <div className="max-w-[1020px] mx-auto mt-12">
+    <div className="mx-auto mt-12 max-w-[1020px]">
       <HeroSection
         testId="heritage"
         heading="Наследие человечества"

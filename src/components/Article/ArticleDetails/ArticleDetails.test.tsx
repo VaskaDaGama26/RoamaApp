@@ -25,7 +25,7 @@ describe('ArticleDetails', () => {
 
   it('does not render place and time if they are not passed', () => {
     render(<ArticleDetails place={undefined} time={undefined} />);
-    
+
     expect(screen.queryByText('Москва')).toBeNull();
     expect(screen.queryByText('2023-08-07')).toBeNull();
 

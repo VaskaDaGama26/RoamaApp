@@ -4,7 +4,7 @@ import storiesData from './storiesData.json';
 
 const StoriesPage = () => {
   return (
-    <div className="max-w-[1020px] mx-auto mt-12 mb-24">
+    <div className="mx-auto mt-12 mb-24 max-w-[1020px]">
       <HeroSection
         testId="stories"
         heading="Путешествия в книгах и кино"

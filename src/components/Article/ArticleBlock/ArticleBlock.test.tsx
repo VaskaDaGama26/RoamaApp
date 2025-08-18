@@ -16,20 +16,13 @@ describe('ArticleBlock', () => {
     {
       title: 'Title 1',
       imageGallery: ['article/test/example11.jpg', 'article/test/example12.jpg'],
-      textParagraphs: [
-        'Paragraph 11',
-        'Paragraph 12',
-        'Paragraph 13',
-      ],
+      textParagraphs: ['Paragraph 11', 'Paragraph 12', 'Paragraph 13'],
       link: 'https://www.example1.com/',
     },
     {
       title: 'Title 2',
       imageGallery: ['article/test/example21.jpg', 'article/test/example22.jpg'],
-      textParagraphs: [
-        'Paragraph 21',
-        'Paragraph 22',
-      ],
+      textParagraphs: ['Paragraph 21', 'Paragraph 22'],
 
       link: 'https://www.example2.com/',
     },

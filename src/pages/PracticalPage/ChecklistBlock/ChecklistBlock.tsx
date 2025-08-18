@@ -25,7 +25,7 @@ const ChecklistBlock = ({ data }: { data: ChecklistData }) => {
   };
 
   return (
-    <div className="flex items-center flex-col mt-16 gap-9 px-5 lg:px-0">
+    <div className="mt-16 flex flex-col items-center gap-9 px-5 lg:px-0">
       <BlockHeading
         label="Что не забыть взять в путешествие?"
         image={explorer}
@@ -40,7 +40,7 @@ const ChecklistBlock = ({ data }: { data: ChecklistData }) => {
               whileInView="visible"
               variants={listVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className="text-(--gray) pt-2 pb-4 ps-4 list-decimal text-sm/loose sm:text-base/normal"
+              className="list-decimal ps-4 pt-2 pb-4 text-sm/loose text-(--gray) sm:text-base/normal"
             >
               {items.map((item: { label: string }, subIndex: number) => (
                 <motion.li variants={itemsVariants} key={subIndex} className="ps-1">

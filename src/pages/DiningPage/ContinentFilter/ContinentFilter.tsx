@@ -13,7 +13,7 @@ const ContinentFilter = () => {
     : diningData;
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-2.5 lg:px-0 mt-10">
+    <div className="mx-auto mt-10 w-full max-w-5xl px-2.5 lg:px-0">
       <FilterButtons
         continents={allContinents}
         activeContinent={activeContinent}
