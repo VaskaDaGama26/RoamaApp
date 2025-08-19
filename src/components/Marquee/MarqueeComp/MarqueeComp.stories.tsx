@@ -1,9 +1,9 @@
 import MarqueeComp from './MarqueeComp';
-import '../../index.css';
-import '../../colors.css';
+import '../../../index.css';
+import '../../../colors.css';
 
 export default {
-  title: 'components/MarqueeComp',
+  title: 'components/Marquee/MarqueeComp',
   component: MarqueeComp,
   tags: ['autodocs'],
 };

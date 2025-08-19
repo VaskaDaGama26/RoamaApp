@@ -29,14 +29,12 @@ const LazyMediaWithSkeleton = ({
 
   useEffect(() => {
     if (!ref.current) return;
-
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setInView(true);
-        observer.disconnect();
+        observer.unobserve(entry.target);
       }
     });
-
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
@@ -51,7 +49,7 @@ const LazyMediaWithSkeleton = ({
         overflow: 'hidden',
       }}
     >
-      {(!loaded || !inView) && (
+      {!loaded && (
         <Skeleton height="100%" width="100%" style={{ position: 'absolute', top: 0, left: 0 }} />
       )}
 

@@ -1,10 +1,10 @@
 import MarqueeLabel from './MarqueeLabel';
-import '../../index.css';
-import '../../colors.css';
+import '../../../index.css';
+import '../../../colors.css';
 import icon from '/static/icons/marquee/car.svg';
 
 export default {
-  title: 'components/MarqueeLabel',
+  title: 'components/Marquee/MarqueeLabel',
   component: MarqueeLabel,
   tags: ['autodocs'],
 };
